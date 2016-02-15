@@ -1,10 +1,42 @@
 ﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/HomePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/ViewModel/HomeViewModel.cs">
     <Files>
-      <File FileName="Grial/Views/HomePage.xaml" Line="31" Column="14" />
-      <File FileName="Grial/Views/Social/Social.xaml" Line="30" Column="31" />
+      <File FileName="Grial/Views/HomePage.xaml" Line="20" Column="34" />
+      <File FileName="Grial/Views/HomePage.xaml.cs" Line="35" Column="1" />
+      <File FileName="Grial/Models/SampleData.cs" Line="80" Column="5" />
+      <File FileName="Grial/ViewModel/HomeViewModel.cs" Line="31" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Grial" expanded="True">
+            <Node name="Grial" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModel" expanded="True">
+                <Node name="HomeViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Messages" expanded="True">
+                  <Node name="Templates" expanded="True">
+                    <Node name="ChatLeftMessageItemTemplate.xaml" expanded="True" />
+                  </Node>
+                  <Node name="ChatMessagesList.xaml" expanded="True" />
+                  <Node name="MessagesList.xaml" expanded="True" />
+                </Node>
+                <Node name="Social" expanded="True">
+                  <Node name="Templates" expanded="True">
+                    <Node name="FriendItemTemplate.xaml" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Theme" expanded="True" />
+                <Node name="HomePage.xaml" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

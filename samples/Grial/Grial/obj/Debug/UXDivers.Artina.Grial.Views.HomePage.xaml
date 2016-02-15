@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.HomePage"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:local="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	Title="Theme">
+	<ScrollView>
+		<StackLayout VerticalOptions="Fill"
+			Padding="20"
+			Spacing="10">
+			<!-- LIST AND SEARCHBAR -->
+			<SearchBar x:Name="themeNamesSearchBar"
+				Placeholder="Search for a name"
+				HorizontalOptions="FillAndExpand" />
+			<ListView x:Name="themeNamesSampleListView"
+				ItemsSource="{x:Static sample:SampleData.Names}" SeparatorColor="{StaticResource ListViewSeparatorColor}"
+				RowHeight="150"
+				>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+						<StackLayout Orientation="Horizontal"
+							HorizontalOptions="FillAndExpand">
+							<artina:CircleImage Source="{ StaticResource ThemeAvatarSample1Image }"
+								Style="{ StaticResource Avatar }" />
+							<StackLayout Orientation="Vertical" >
+								<Label Text="nom" />
+								<Label Text="fonction" />
+							</StackLayout>
+							<StackLayout Orientation="Vertical" >
+								<Label Text="Date" />
+								<Label Text="Langue" />
+							</StackLayout>
+						</StackLayout>
+					
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

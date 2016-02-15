@@ -7,6 +7,7 @@
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	BackgroundColor="White"
+	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
 	 >
 
 	<ScrollView>
@@ -26,6 +27,7 @@
 			<!-- LOGO -->
 			<commonViews:BrandBlock 
 				Grid.Row="0"
+				VerticalOptions="Center"
 			/>
 
 			<!-- CLOSE ICON -->
@@ -89,7 +91,8 @@
 				<Button
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					VerticalOptions="End"
-					Text="Login" />
+					Text="Login"
+					Command="{Binding LoginCommand}" />
 			</StackLayout>
 
 		</Grid>

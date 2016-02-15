@@ -266,3 +266,7 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.Log1.xaml
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.LoginPage.xaml.g.cs
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.LoginPage.xaml
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.HomePage.xaml.g.cs
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.MenuPage.xaml.g.cs
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.HomePage.xaml
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.MenuPage.xaml

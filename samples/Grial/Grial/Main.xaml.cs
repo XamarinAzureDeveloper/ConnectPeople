@@ -17,6 +17,8 @@ namespace UXDivers.Artina.Grial
 		static Main() 
 		{
 			ViewFactory.Register<LoginPage, LoginViewModel> ();
+			ViewFactory.Register<HomePage, HomeViewModel> ();
+			ViewFactory.Register<MenuPage, MenuViewModel> ();
 		}
 		public Main ()
 		{

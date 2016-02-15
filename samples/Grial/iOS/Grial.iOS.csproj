@@ -59,7 +59,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <MtouchI18n></MtouchI18n>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -85,7 +86,7 @@
       <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>
     <Reference Include="UXDivers.Artina.Shared.iOS">
-      <HintPath>../../../lib\/ios-unified/UXDivers.Artina.Shared.iOS.dll</HintPath>
+      <HintPath>..\..\..\lib\ios-unified\UXDivers.Artina.Shared.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -78,7 +78,7 @@
       <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
     </Reference>
     <Reference Include="UXDivers.Artina.Shared.Droid">
-      <HintPath>../../../lib\/android/UXDivers.Artina.Shared.Droid.dll</HintPath>
+      <HintPath>..\..\..\lib\android\UXDivers.Artina.Shared.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -35,7 +35,7 @@ namespace UXDivers.Artina.Grial
 			Window.ClearFlags(WindowManagerFlags.ForceNotFullscreen);
 			*/
 
-			LoadApplication (new App ());
+			LoadApplication (new Main ());
 
 
 			#pragma warning disable 618

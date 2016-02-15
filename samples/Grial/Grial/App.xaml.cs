@@ -14,18 +14,26 @@ namespace UXDivers.Artina.Grial
 
 		public static MasterDetailPage MasterDetailPage;
 
+		static App()
+		{
+			ViewFactory.Register<LoginPage, LoginViewModel> ();
+		}
 		public App ()
 		{
 			InitializeComponent ();
 
-			MainPage = GetMainPage();
+//			MainPage = GetMainPage();
+
+			MainPage = new NavigationPage (ViewFactory.Create<LoginViewModel> () as Page) {
+				Title = "Login"
+			};
 
 			MainPage.SetValue (NavigationPage.BarTextColorProperty, Color.White);
 		}
 			
-		public static Page GetMainPage()
-		{
-			return new RootPage(true);
-		}
+//		public static Page GetMainPage()
+//		{
+//			return new RootPage(true);
+//		}
 	}
 }

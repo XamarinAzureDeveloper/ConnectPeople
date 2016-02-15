@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{7041522B-6406-4AA7-8C6D-8AD1661DD392}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UXDivers.Artina.Grial</RootNamespace>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <NuGetPackageImportStamp>81549c48</NuGetPackageImportStamp>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyName>UXDivers.Artina.Grial</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Sample.cs" />
+    <Compile Include="ViewModel\SampleCoordinator.cs" />
+    <Compile Include="Views\Ecommerce\ProductGrid.xaml.cs">
+      <DependentUpon>ProductsGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\Profile.xaml.cs">
+      <DependentUpon>Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\Social.xaml.cs">
+      <DependentUpon>Social.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Messages\MessagesList.xaml.cs">
+      <DependentUpon>MessagesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="ViewModel\SamplesViewModel.cs" />
+    <Compile Include="Views\Theme\Theme.cs">
+      <DependentUpon>Theme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Views\Ecommerce\ProductItemView.xaml.cs">
+      <DependentUpon>ProductItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\ProductsCarousel.xaml.cs">
+      <DependentUpon>ProductsCarousel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\RootPage.xaml.cs">
+      <DependentUpon>RootPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="ViewModel\PostsViewModel.cs" />
+    <Compile Include="Views\Common\CustomNavBar.xaml.cs">
+      <DependentUpon>CustomNavBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\BrandBlock.xaml.cs">
+      <DependentUpon>BrandBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\SamplesDefinition.cs" />
+    <Compile Include="ViewModel\SampleCategory.cs" />
+    <Compile Include="Helpers\NavigationService.cs" />
+    <Compile Include="Views\Navigation\SamplesListFromCategory.xaml.cs">
+      <DependentUpon>SamplesListFromCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\CategoriesListItemTemplate.xaml.cs">
+      <DependentUpon>CategoriesListItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Messages\Templates\MessageItemTemplate.xaml.cs">
+      <DependentUpon>MessageItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\Templates\FriendItemTemplate.xaml.cs">
+      <DependentUpon>FriendItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\Templates\SocialHeaderTemplate.xaml.cs">
+      <DependentUpon>SocialHeaderTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\SocialVariant.xaml.cs" />
+    <Compile Include="Views\Common\Badge.xaml.cs">
+      <DependentUpon>Badge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SampleData.cs" />
+    <Compile Include="Views\Articles\ArticlesList.xaml.cs">
+      <DependentUpon>ArticlesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\ArticlesListVariant.xaml.cs">
+      <DependentUpon>ArticlesListVariant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\Templates\ArticleItemTemplate.xaml.cs">
+      <DependentUpon>ArticleItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\Templates\ArticleVariantItemTemplate.xaml.cs">
+      <DependentUpon>ArticleVariantItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\Templates\CommentItemTemplate.xaml.cs">
+      <DependentUpon>CommentItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\CircleIcon.xaml.cs">
+      <DependentUpon>CircleIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboards\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboards\DashboardFlat.xaml.cs">
+      <DependentUpon>DashboardFlat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboards\DashboardWithImages.xaml.cs">
+      <DependentUpon>DashboardWithImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\ArticleView.xaml.cs">
+      <DependentUpon>ArticleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Theme\CustomRenderers.xaml.cs">
+      <DependentUpon>CustomRenderers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\MainMenuItemTemplate.xaml.cs">
+      <DependentUpon>MainMenuItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\MainMenuGroupHeaderTemplate.xaml.cs">
+      <DependentUpon>MainMenuGroupHeaderTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Grouping.cs" />
+    <Compile Include="Views\Social\SocialGalleryImagePreview.xaml.cs">
+      <DependentUpon>SocialGalleryImagePreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Social\Templates\SocialGalleryImage.xaml.cs">
+      <DependentUpon>SocialGalleryImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\CategoriesListWithImages.xaml.cs">
+      <DependentUpon>CategoriesListWithImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\CategoriesListWithImagesItemTemplate.xaml.cs">
+      <DependentUpon>CategoriesListWithImagesItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Logins\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Logins\SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Logins\PasswordRecovery.xaml.cs">
+      <DependentUpon>PasswordRecovery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\CategoriesListWithIcons.xaml.cs">
+      <DependentUpon>CategoriesListWithIcons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\CategoriesListWithIconsItemTemplate.xaml.cs">
+      <DependentUpon>CategoriesListWithIconsItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\CustomNavBarPage.xaml.cs">
+      <DependentUpon>CustomNavBarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\Templates\SamplesListFromCategoryItemTemplate.xaml.cs">
+      <DependentUpon>SamplesListFromCategoryItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Theme\CommonViews.xaml.cs">
+      <DependentUpon>CommonViews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Theme\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\ProductsGridVariant.xaml.cs">
+      <DependentUpon>ProductsGridVariant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\ArticlesFeed.xaml.cs">
+      <DependentUpon>ArticlesFeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Articles\Templates\ArticleFeedItemTemplate.xaml.cs">
+      <DependentUpon>ArticleFeedItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Messages\ChatMessagesList.xaml.cs">
+      <DependentUpon>ChatMessagesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Messages\Templates\ChatLeftMessageItemTemplate.xaml.cs">
+      <DependentUpon>ChatLeftMessageItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Messages\Templates\ChatRightMessageItemTemplate.xaml.cs">
+      <DependentUpon>ChatRightMessageItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChatMessage.cs" />
+    <Compile Include="ViewModel\ChatViewModel.cs" />
+    <Compile Include="Views\Dashboards\Templates\DashboardItemTemplate.xaml.cs">
+      <DependentUpon>DashboardItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\ProductImageFullScreen.xaml.cs">
+      <DependentUpon>ProductImageFullScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\CategoriesListFlat.xaml.cs">
+      <DependentUpon>CategoriesListFlat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Walkthroughs\Walktrough.xaml.cs">
+      <DependentUpon>Walkthrough.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Walkthroughs\WalkthroughVariant.xaml.cs">
+      <DependentUpon>WalkthroughVariant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Walkthroughs\Templates\WalkthroughStepItemTemplate.xaml.cs">
+      <DependentUpon>WalkthroughStepItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Walkthroughs\Templates\WalkthroughVariantStepItemTemplate.xaml.cs">
+      <DependentUpon>WalkthroughVariantStepItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ecommerce\Templates\ProductGridItemTemplate.xaml.cs">
+      <DependentUpon>ProductGridItemTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Colors.cs">
+      <DependentUpon>Colors.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\ArticleViewModel.cs" />
+    <Compile Include="ViewModel\DashboardViewModel.cs" />
+    <Compile Include="ViewModel\SocialViewModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\Profile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\Social.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Messages\MessagesList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\Settings.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Theme\Theme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\SocialVariant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\ProductItemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\ProductsCarousel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\ProductsGrid.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\RootPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\CustomNavBar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\MainMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\BrandBlock.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\SamplesListFromCategory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\CategoriesListItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Messages\Templates\MessageItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\Templates\FriendItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\Templates\SocialHeaderTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\Badge.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\ArticlesList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\ArticlesListVariant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\Templates\ArticleItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\Templates\ArticleVariantItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\Templates\CommentItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\CircleIcon.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboards\Dashboard.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboards\DashboardFlat.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboards\DashboardWithImages.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\ArticleView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Theme\CustomRenderers.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\MainMenuItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\MainMenuGroupHeaderTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\SocialGalleryImagePreview.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Social\Templates\SocialGalleryImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\CategoriesListWithImages.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\CategoriesListWithImagesItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Logins\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Logins\SignUp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Logins\PasswordRecovery.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\CategoriesListWithIcons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\CategoriesListWithIconsItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\CustomNavBarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\Templates\SamplesListFromCategoryItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Theme\CommonViews.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Theme\About.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\ProductsGridVariant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\ArticlesFeed.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Articles\Templates\ArticleFeedItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Messages\ChatMessagesList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Messages\Templates\ChatLeftMessageItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Messages\Templates\ChatRightMessageItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboards\Templates\DashboardItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\ProductImageFullScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Navigation\CategoriesListFlat.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Walkthroughs\Walkthrough.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Walkthroughs\WalkthroughVariant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Walkthroughs\Templates\WalkthroughStepItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Walkthroughs\Templates\WalkthroughVariantStepItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ecommerce\Templates\ProductGridItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UXDivers.Artina.Shared">
+      <HintPath>..\..\..\lib\pcl\UXDivers.Artina.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.0.0.6490\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Colors.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Colors.cs</LastGenOutput>
+    </None>
+    <None Include="SampleData.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Common\" />
+    <Folder Include="Views\Navigation\Templates\" />
+    <Folder Include="Views\Messages\Templates\" />
+    <Folder Include="Views\Social\Templates\" />
+    <Folder Include="Views\Articles\Templates\" />
+    <Folder Include="Views\Ecommerce\Templates\" />
+    <Folder Include="Views\Dashboards\Templates\" />
+    <Folder Include="Views\Walkthroughs\Templates\" />
+  </ItemGroup>
+</Project>

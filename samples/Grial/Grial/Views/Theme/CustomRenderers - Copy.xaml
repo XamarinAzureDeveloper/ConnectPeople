@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.CustomRenderers"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared">
+
+
+	<ScrollView>
+		<StackLayout Padding="20">
+
+			
+
+			<Label Text="CircleImage" />
+			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+				<artina:CircleImage 
+					Source="friend_thumbnail_31.jpg" 
+					HeightRequest="48" 
+					WidthRequest="48"
+				/>
+
+				<artina:CircleImage 
+					Source="friend_thumbnail_27.jpg" 
+				/>
+			</StackLayout>
+			<BoxView HeightRequest="1" BackgroundColor="{StaticResource AccentColor}" />
+
+
+			<Label Text="ArtinaEntry" />
+			<Entry
+	            x:Name="emailEntry"
+	            Placeholder="E-mail"
+	            Text=""
+	            Style="{DynamicResource LoginEntryStyle}"
+	            artina:EntryProperties.PlaceholderColor="{StaticResource PlaceholderColorEntry}"
+	            artina:EntryProperties.BorderStyle="ButtomLine"
+	            artina:EntryProperties.BorderWidth="1"
+	            artina:EntryProperties.BorderColor="{StaticResource AccentColor}"
+			/>
+			<BoxView HeightRequest="1" BackgroundColor="{StaticResource AccentColor}" />
+
+			<Label Text="Fontawesome Icons" />
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="&#xf001;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf002;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf003;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf004;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf005;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf006;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf007;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf008;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf009;" Style="{ DynamicResource FontIconItemDemo }" />
+				<Label Text="&#xf010;" Style="{ DynamicResource FontIconItemDemo }" />
+			</StackLayout>
+
+        <Label Text="Validation Entry Error Style" />
+        <RelativeLayout>
+          <Entry x:Name="usernameEntry"
+            Placeholder="Username"
+            Text=""
+            Style="{DynamicResource LoginEntryStyle}"
+            artina:EntryProperties.PlaceholderColor="{StaticResource PlaceholderColorEntry}"
+            artina:EntryProperties.BorderStyle="ButtomLine"
+            artina:EntryProperties.BorderWidth="1"
+            artina:EntryProperties.BorderColor="{StaticResource AccentColor}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression 
+						Type=RelativeToParent, 
+						Property=Width, 
+						Factor=1}" />
+
+			<!---USERNAME VALIDATION INDICATOR-->
+	          <Label
+	            Text=" Please enter required information "
+	            Style="{DynamicResource ValidationEntryErrorStyle}"
+	            RelativeLayout.YConstraint="{ConstraintExpression 
+							Type=RelativeToView, 
+							ElementName=usernameEntry, 
+							Property=Height,
+							Factor=1, 
+							Constant=6}"/>
+        </RelativeLayout>		
+	</StackLayout>
+	</ScrollView>
+</ContentPage>

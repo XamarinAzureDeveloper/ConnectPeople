@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UXDivers.Artina.Grial.ThemeTabs"
+	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	Title="Grial Theme">
+	<TabbedPage.Children>
+		<views:Theme Title="Native controls" />
+		<views:CustomRenderers Title="Artina Custom Renderers" />
+		<views:CommonViews Title="Grial Common Views" />
+	</TabbedPage.Children>
+</TabbedPage>

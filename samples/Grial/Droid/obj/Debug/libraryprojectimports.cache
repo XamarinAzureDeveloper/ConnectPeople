@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/UXDivers.Artina.Shared.Droid/library_project_imports/res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/UXDivers.Artina.Shared.Droid/library_project_imports/assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/abdel/Desktop/App/grial-uikit-extended-1.2.1/samples/Grial/Droid/obj/Debug/__library_projects__/UXDivers.Artina.Shared.Droid.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

@@ -17,7 +17,7 @@
 				HorizontalOptions="FillAndExpand" />
 			<ListView x:Name="themeNamesSampleListView"
 				ItemsSource="{x:Static sample:SampleData.Names}" SeparatorColor="{StaticResource ListViewSeparatorColor}"
-				RowHeight="150"
+				RowHeight="70" 
 				>
 				<ListView.ItemTemplate>
 					<DataTemplate>

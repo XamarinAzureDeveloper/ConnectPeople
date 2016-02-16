@@ -22,7 +22,7 @@
 				to see your changes on your App
 			-->
 			<!-- Export AccentColor -->
-			<Color x:Key="AccentColor">#FFDA125F</Color>
+			<Color x:Key="AccentColor">#005786</Color>
 			<!-- Export InverseTextColor -->
 			<Color x:Key="InverseTextColor">White</Color>
 
@@ -30,28 +30,28 @@
 
 
 			<!-- COLORS -->
-			<Color x:Key="BrandColor">#ad1457</Color>
-			<Color x:Key="BrandColorLight">#ec407a</Color>
+			<Color x:Key="BrandColor">#005786</Color>
+			<Color x:Key="BrandColorLight">#29ABE2</Color>
 			<Color x:Key="BrandColorLighter">#f06292</Color>
-			<Color x:Key="BrandColorDark">#c2185b</Color>
-			<Color x:Key="BrandColorDarker">#ad1457</Color>
+			<Color x:Key="BrandColorDark">#BDCCD4</Color>
+			<Color x:Key="BrandColorDarker">#005786</Color>
 
 			<!-- COMPLEMENT COLORS -->
-			<Color x:Key="ComplementColor">#384f63</Color>
-			<Color x:Key="ComplementColorDark">#272f36</Color>
+			<Color x:Key="ComplementColor">#333333</Color>
+			<Color x:Key="ComplementColorDark">#333333</Color>
 			<Color x:Key="ComplementColorDarker">#1f252a</Color>
 			<Color x:Key="TranslucidBlack">#44000000</Color>
 			<Color x:Key="TranslucidWhite">#22ffffff</Color>
 
 			<!-- INDICATOR COLORS -->
-			<Color x:Key="OkColor">#22c064</Color>
+			<Color x:Key="OkColor">#BDCCD4</Color>
 			<Color x:Key="ErrorColor">Red</Color>
-			<Color x:Key="WarningColor">#ffc107</Color>
+			<Color x:Key="WarningColor">#29ABE2</Color>
 
 
-			<Color x:Key="SecondaryColor">#54B9ED</Color>
+			<Color x:Key="SecondaryColor">#005786</Color>
 			<Color x:Key="FacebookColor">#3e549c</Color>
-			<Color x:Key="ComplentColor">#FF009966</Color>
+			<Color x:Key="ComplentColor">#29ABE2</Color>
 
 			<Color x:Key="SaveButtonColor">#22c064</Color>
 			<Color x:Key="DeleteButtonColor">#D50000</Color>

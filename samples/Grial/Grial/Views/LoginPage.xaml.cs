@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace UXDivers.Artina.Grial
 {
@@ -13,30 +14,19 @@ namespace UXDivers.Artina.Grial
 			NavigationPage.SetHasNavigationBar(this, false);
 		}
 
-		public async void OnSignupStackTapped (object sender, EventArgs e) {
-			if (Login.IsPageInNavigationStack<SignUp> (Navigation)) {
-				await Navigation.PopAsync ();
-				return;
-			}
-
-			var signUpPage = new SignUp();
-			await Navigation.PushAsync( signUpPage );
-		}
-
-		async void OnCloseButtonClicked(object sender, EventArgs args)
+		protected override void OnBindingContextChanged ()
 		{
-			await Navigation.PopModalAsync();
+			base.OnBindingContextChanged ();
+			var viewModel = BindingContext as ViewModel;
+			if (viewModel == null) 
+				return;
+			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 		}
-
-		public static bool IsPageInNavigationStack<TPage>(INavigation navigation) where TPage : Page {
-			if (navigation.NavigationStack.Count > 1) {
-				var last = navigation.NavigationStack [navigation.NavigationStack.Count - 2];
-
-				if (last is TPage) {
-					return true;
-				}
-			}
-			return false;
+		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
+		{
+			await Navigation.PushAsync ((Page)ViewFactory.Create (tViewModel, () => (ViewModel)viewModelFactory ()));
+			//Navigation.RemovePage (this);
+			return true;
 		}
 	}
 }

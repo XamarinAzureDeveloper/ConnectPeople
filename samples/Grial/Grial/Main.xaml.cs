@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Diagnostics;
 
 namespace UXDivers.Artina.Grial
 {
@@ -19,6 +20,8 @@ namespace UXDivers.Artina.Grial
 			ViewFactory.Register<LoginPage, LoginViewModel> ();
 			ViewFactory.Register<HomePage, HomeViewModel> ();
 			ViewFactory.Register<MenuPage, MenuViewModel> ();
+			ViewFactory.Register<SignUpPage, SignUpViewModel> ();
+
 		}
 		public Main ()
 		{
@@ -34,6 +37,13 @@ namespace UXDivers.Artina.Grial
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
+			if (Application.Current.Properties.ContainsKey("id"))
+			{
+				var id = Application.Current.Properties ["id"];
+				// do something with id
+				Debug.WriteLine (Application.Current.Properties ["id"]);
+			}
+
 		}
 
 		protected override void OnSleep ()
@@ -44,6 +54,13 @@ namespace UXDivers.Artina.Grial
 		protected override void OnResume ()
 		{
 			// Handle when your app resumes
+			if (Application.Current.Properties.ContainsKey("id"))
+			{
+				var id = Application.Current.Properties ["id"];
+				// do something with id
+				Debug.WriteLine (Application.Current.Properties ["id"]);
+
+			}
 		}
 	}
 }

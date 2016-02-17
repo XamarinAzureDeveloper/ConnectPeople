@@ -92,6 +92,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Forms.Platform.dll",
 		"UXDivers.Artina.Shared.Droid.dll",
+		"SQLite-net.dll",
+		"SQLitePCL.raw.dll",
 		"UXDivers.Artina.Grial.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",

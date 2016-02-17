@@ -53,5 +53,7 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/UXDivers.Artina.Shared.iOS.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/SQLite-net.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/SQLitePCL.raw.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/UXDivers.Artina.Grial.dll.mdb

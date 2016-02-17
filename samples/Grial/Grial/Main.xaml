@@ -8,7 +8,7 @@
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 	xmlns:converters="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial">
 
-	<Application.Resources>
+		<Application.Resources>
 
 		<!-- http://developer.xamarin.com/guides/cross-platform/xamarin-forms/working-with/styles/ -->
 
@@ -22,7 +22,7 @@
 				to see your changes on your App
 			-->
 			<!-- Export AccentColor -->
-			<Color x:Key="AccentColor">#FFDA125F</Color>
+			<Color x:Key="AccentColor">#005786</Color>
 			<!-- Export InverseTextColor -->
 			<Color x:Key="InverseTextColor">White</Color>
 
@@ -30,28 +30,28 @@
 
 
 			<!-- COLORS -->
-			<Color x:Key="BrandColor">#ad1457</Color>
-			<Color x:Key="BrandColorLight">#ec407a</Color>
+			<Color x:Key="BrandColor">#005786</Color>
+			<Color x:Key="BrandColorLight">#29ABE2</Color>
 			<Color x:Key="BrandColorLighter">#f06292</Color>
-			<Color x:Key="BrandColorDark">#c2185b</Color>
-			<Color x:Key="BrandColorDarker">#ad1457</Color>
+			<Color x:Key="BrandColorDark">#BDCCD4</Color>
+			<Color x:Key="BrandColorDarker">#005786</Color>
 
 			<!-- COMPLEMENT COLORS -->
-			<Color x:Key="ComplementColor">#384f63</Color>
-			<Color x:Key="ComplementColorDark">#272f36</Color>
+			<Color x:Key="ComplementColor">#333333</Color>
+			<Color x:Key="ComplementColorDark">#333333</Color>
 			<Color x:Key="ComplementColorDarker">#1f252a</Color>
 			<Color x:Key="TranslucidBlack">#44000000</Color>
 			<Color x:Key="TranslucidWhite">#22ffffff</Color>
 
 			<!-- INDICATOR COLORS -->
-			<Color x:Key="OkColor">#22c064</Color>
+			<Color x:Key="OkColor">#BDCCD4</Color>
 			<Color x:Key="ErrorColor">Red</Color>
-			<Color x:Key="WarningColor">#ffc107</Color>
+			<Color x:Key="WarningColor">#29ABE2</Color>
 
 
-			<Color x:Key="SecondaryColor">#54B9ED</Color>
+			<Color x:Key="SecondaryColor">#005786</Color>
 			<Color x:Key="FacebookColor">#3e549c</Color>
-			<Color x:Key="ComplentColor">#FF009966</Color>
+			<Color x:Key="ComplentColor">#29ABE2</Color>
 
 			<Color x:Key="SaveButtonColor">#22c064</Color>
 			<Color x:Key="DeleteButtonColor">#D50000</Color>
@@ -81,7 +81,7 @@
 			<Color x:Key="BaseTextColor" >#37474f</Color>
 			<x:Double x:Key="BaseFontSize">16</x:Double>
 			<x:Double x:Key="BaseButtonHeight">44</x:Double>
-			<x:Double x:Key="BaseButtonBorderRadius">22</x:Double>
+			<x:Double x:Key="BaseButtonBorderRadius">2</x:Double>
 
 
 			<x:Double x:Key="MainMenuLabelFontsize">18</x:Double>
@@ -150,6 +150,7 @@
 				<Setter Property="BackgroundColor" Value="Transparent" />
 				<Setter Property="SeparatorColor" Value="{StaticResource ListViewSeparatorColor}" />
 				<Setter Property="SeparatorVisibility" Value="Default" />
+				<Setter Property="RowHeight" Value="70"/>
 			</Style>
 
 			<Style TargetType="TableView">
@@ -174,7 +175,7 @@
 
 			<Style TargetType="Button">
 				<Setter Property="FontSize" Value="{StaticResource BaseFontSize}" />
-				<Setter Property="BorderRadius" Value="22" />
+				<Setter Property="BorderRadius" Value="2" />
 				<Setter Property="HeightRequest" Value="{StaticResource BaseButtonHeight}"/> 
 
 				<!-- 
@@ -198,7 +199,7 @@
 
 			<Style x:Key="RoundedButtonStyle" TargetType="Button">
 				<Setter Property="FontSize" Value="{StaticResource BaseFontSize}" />
-				<Setter Property="BorderRadius" Value="22" />
+				<Setter Property="BorderRadius" Value="2" />
 				<Setter Property="HeightRequest" Value="{StaticResource BaseButtonHeight}"/>
 			</Style>
 
@@ -246,7 +247,7 @@
 					<Setter Property="BackgroundColor" Value="{StaticResource MainMenuBackgroundColor}"/>
 					<Setter Property="SeparatorVisibility" Value="Default" />
 					<Setter Property="SeparatorColor" Value="{StaticResource MainMenuSeparatorColor}" />
-					<Setter Property="RowHeight" Value="44"/>
+					<Setter Property="RowHeight" Value="70"/>
 				</Style>
 
 				<Style x:Key="MainMenuIconStyle" TargetType="Label" >

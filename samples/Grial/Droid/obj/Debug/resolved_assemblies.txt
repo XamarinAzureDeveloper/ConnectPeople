@@ -14,6 +14,8 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/Xamarin.Forms.Xaml.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/Xamarin.Forms.Platform.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/UXDivers.Artina.Shared.Droid.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/SQLite-net.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/SQLitePCL.raw.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/System.Core.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/assemblies/mscorlib.dll

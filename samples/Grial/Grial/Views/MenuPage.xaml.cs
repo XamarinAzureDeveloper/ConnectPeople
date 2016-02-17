@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace UXDivers.Artina.Grial
 {
@@ -11,6 +12,22 @@ namespace UXDivers.Artina.Grial
 		{
 			InitializeComponent ();
 		}
+
+		protected override void OnBindingContextChanged ()
+		{
+			base.OnBindingContextChanged ();
+			var viewModel = BindingContext as ViewModel;
+			if (viewModel == null) 
+				return;
+			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
+		}
+		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
+		{
+			await Navigation.PushAsync ((Page)ViewFactory.Create (tViewModel, () => (ViewModel)viewModelFactory ()));
+			Navigation.RemovePage (this);
+			return true;
+		}
+
 	}
 }
 

@@ -16,22 +16,22 @@
 				Placeholder="Search for a name"
 				HorizontalOptions="FillAndExpand" />
 			<ListView x:Name="themeNamesSampleListView"
-				ItemsSource="{x:Static sample:SampleData.Names}" SeparatorColor="{StaticResource ListViewSeparatorColor}"
-				RowHeight="70" 
+				ItemsSource="{Binding Users}" SeparatorColor="{StaticResource ListViewSeparatorColor}"
+
 				>
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
 						<StackLayout Orientation="Horizontal"
-							HorizontalOptions="FillAndExpand">
+							HorizontalOptions="FillAndExpand" Padding="5">
 							<artina:CircleImage Source="{ StaticResource ThemeAvatarSample1Image }"
 								Style="{ StaticResource Avatar }" />
 							<StackLayout Orientation="Vertical" >
-								<Label Text="nom" />
-								<Label Text="fonction" />
+								<Label Text="{Binding Id}" />
+								<Label Text="{Binding Email}" />
 							</StackLayout>
-							<StackLayout Orientation="Vertical" >
-								<Label Text="Date" />
+							<StackLayout Orientation="Vertical" HorizontalOptions="End" >
+								<Label Text="CreateDate" />
 								<Label Text="Langue" />
 							</StackLayout>
 						</StackLayout>

@@ -39,7 +39,7 @@ namespace UXDivers.Artina.Grial
 			var admin = DB.GetItem (Email, Password);
 			if (admin != null) {
 				//je rentre
-				Application.Current.Properties ["id"] = admin.Id;
+				Application.Current.Properties ["User"] = admin;
 				Application.Current.MainPage = new MasterDetailPage {
 
 					Master = new NavigationPage (ViewFactory.Create<MenuViewModel> () as Page){

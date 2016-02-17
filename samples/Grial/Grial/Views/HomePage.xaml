@@ -16,7 +16,9 @@
 				Placeholder="Search for a name"
 				HorizontalOptions="FillAndExpand" />
 			<ListView x:Name="themeNamesSampleListView"
-				ItemsSource="{Binding Users}" SeparatorColor="{StaticResource ListViewSeparatorColor}"
+				ItemsSource="{Binding Users}" 
+				SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+				SeparatorColor="{StaticResource ListViewSeparatorColor}"
 
 				>
 				<ListView.ItemTemplate>

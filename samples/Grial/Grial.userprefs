@@ -1,25 +1,33 @@
 ﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Main.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.7e131882" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/Messages/Templates/MessageItemTemplate.xaml">
     <Files>
-      <File FileName="Grial/Views/HomePage.xaml" Line="16" Column="33" />
-      <File FileName="Grial/Views/HomePage.xaml.cs" Line="35" Column="1" />
-      <File FileName="Grial/Models/SampleData.cs" Line="1" Column="1" />
-      <File FileName="Grial/ViewModel/HomeViewModel.cs" Line="1" Column="1" />
-      <File FileName="Grial/Colors.cs" Line="1" Column="1" />
+      <File FileName="Grial/Views/MessagePage.xaml" Line="21" Column="15" />
+      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="17" Column="1" />
+      <File FileName="Grial/ViewModel/HomeViewModel.cs" Line="36" Column="1" />
       <File FileName="Grial/Main.xaml" Line="153" Column="46" />
-      <File FileName="Grial/Views/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="Grial/Main.xaml.cs" Line="24" Column="54" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="11" Column="32" />
+      <File FileName="Grial/Views/Messages/MessagesList.xaml" Line="8" Column="17" />
+      <File FileName="Grial/Views/Messages/MessagesList.xaml.cs" Line="40" Column="43" />
+      <File FileName="Grial/Views/Messages/Templates/MessageItemTemplate.xaml" Line="19" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Grial" expanded="True">
             <Node name="Grial" expanded="True">
-              <Node name="Packages" expanded="True">
-                <Node name="SQLitePCL.raw" selected="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Messages" expanded="True">
+                  <Node name="Templates" expanded="True">
+                    <Node name="MessageItemTemplate.xaml" selected="True" />
+                  </Node>
+                  <Node name="MessagesList.xaml" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Main.xaml" expanded="True" />
             </Node>
-            <Node name="Grial.Droid" expanded="True" />
           </Node>
         </State>
       </Pad>

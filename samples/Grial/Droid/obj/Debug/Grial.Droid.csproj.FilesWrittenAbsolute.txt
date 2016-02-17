@@ -211,7 +211,7 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/UXDivers.Artina.Shared.Droid.dll
-/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/UXDivers.Artina.Grial.dll
-/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/UXDivers.Artina.Grial.dll.mdb
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/SQLite-net.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/SQLitePCL.raw.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/UXDivers.Artina.Grial.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/bin/Debug/UXDivers.Artina.Grial.dll.mdb

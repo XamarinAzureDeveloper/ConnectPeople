@@ -21,6 +21,7 @@ namespace UXDivers.Artina.Grial
 			ViewFactory.Register<HomePage, HomeViewModel> ();
 			ViewFactory.Register<MenuPage, MenuViewModel> ();
 			ViewFactory.Register<SignUpPage, SignUpViewModel> ();
+			ViewFactory.Register<MessagePage, MessageViewModel> ();
 
 		}
 		public Main ()
@@ -37,11 +38,11 @@ namespace UXDivers.Artina.Grial
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
-			if (Application.Current.Properties.ContainsKey("id"))
+			if (Application.Current.Properties.ContainsKey("User"))
 			{
-				var id = Application.Current.Properties ["id"];
+				var id = Application.Current.Properties ["User"];
 				// do something with id
-				Debug.WriteLine (Application.Current.Properties ["id"]);
+				Debug.WriteLine (Application.Current.Properties ["User"]);
 			}
 
 		}
@@ -54,11 +55,11 @@ namespace UXDivers.Artina.Grial
 		protected override void OnResume ()
 		{
 			// Handle when your app resumes
-			if (Application.Current.Properties.ContainsKey("id"))
+			if (Application.Current.Properties.ContainsKey("User"))
 			{
-				var id = Application.Current.Properties ["id"];
+				var id = Application.Current.Properties ["User"];
 				// do something with id
-				Debug.WriteLine (Application.Current.Properties ["id"]);
+				Debug.WriteLine (Application.Current.Properties ["User"]);
 
 			}
 		}

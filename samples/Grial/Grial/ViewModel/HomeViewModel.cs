@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace UXDivers.Artina.Grial
 {
@@ -10,11 +11,10 @@ namespace UXDivers.Artina.Grial
 
 		public HomeViewModel ()
 		{
-			Users = DBUser.GetItems ((int) Application.Current.Properties["id"]);
-
+			Users = DBUser.GetItems ((int)((UserItem) Application.Current.Properties["User"]).Id);
 		}
 
-		//USERS
+
 		IEnumerable <UserItem> users;
 		public IEnumerable <UserItem> Users 
 		{
@@ -29,38 +29,21 @@ namespace UXDivers.Artina.Grial
 		}
 
 
-
-
-
-
-
-
-
-
-
-
-
-//		public ProductItem SelectedItem {
-//			get { return selectedItem; } 
-//			set {
-//				SetProperty (ref selectedItem, value, onChanged: (async (P) => {
-//					//if property change navigate to viewsmodel
-//					if (P != null) {
-//						await NavigateToViewModel (new ProductDetailViewModel (P)); 
-//						Debug.WriteLine (SelectedItem.Name);
-//						//selecteditem null pour ne pas avoir la couleur orange
-//						SelectedItem = null;
-//					}
-//				}));
-//			} 
-//		}
-//
-//		List<ProductItem> products;
-//
-//		public List<ProductItem> Products {
-//			get{ return products; }
-//			set{ SetProperty (ref products, value); }
-//		}
+		UserItem selectedItem;
+		public UserItem SelectedItem {
+			get { return selectedItem; } 
+			set {
+				SetProperty (ref selectedItem, value, onChanged: (async (U) => {
+					//if property change navigate to viewsmodel
+					if (U != null) {
+						await NavigateToViewModel (new MessageViewModel (U)); 
+						Debug.WriteLine (SelectedItem.Name);
+						//selecteditem null pour ne pas avoir la couleur orange
+						SelectedItem = null;
+					}
+				}));
+			} 
+		}
 	}
 }
 

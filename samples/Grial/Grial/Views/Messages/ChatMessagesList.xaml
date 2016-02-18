@@ -15,7 +15,7 @@
 				/>
 
 			<Entry Placeholder="Write ..." 
-				Text="{Binding ContentText}" HorizontalOptions="CenterAndExpand"/>
+				Text="{Binding ContentText}" HorizontalOptions="FillAndExpand"/>
 
 			<Button Style="{DynamicResource PrimaryActionButtonStyle}"
 				Text="Send"

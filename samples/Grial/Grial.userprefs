@@ -2,41 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.7e131882" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/Messages/ChatMessagesList.xaml.cs">
     <Files>
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="18" Column="69" />
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="14" Column="4" />
-      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="119" Column="6" />
-      <File FileName="Grial/Main.xaml.cs" Line="24" Column="41" />
-      <File FileName="Grial/Main.xaml" Line="63" Column="50" />
-      <File FileName="Grial/Views/Messages/Templates/ChatRightMessageItemTemplate.xaml" Line="41" Column="61" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="21" Column="16" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="39" Column="4" />
+      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="33" Column="19" />
       <File FileName="Grial/Services/MessageItemDatabase.cs" Line="9" Column="2" />
+      <File FileName="Grial/ViewModel/ViewModel.cs" Line="43" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Grial" expanded="True">
-            <Node name="Grial" expanded="True">
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Messages" expanded="True">
-                  <Node name="Templates" expanded="True" />
-                  <Node name="ChatMessagesList.xaml" expanded="True">
-                    <Node name="ChatMessagesList.xaml.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/ViewModel/MessageViewModel.cs" line="36" column="1" />
-      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/ViewModel/MessageViewModel.cs" line="37" column="1" />
-      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

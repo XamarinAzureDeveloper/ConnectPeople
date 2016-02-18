@@ -8,11 +8,13 @@ namespace UXDivers.Artina.Grial
 {
 	public partial class ChatMessagesList : ContentPage
 	{
+		MessageItem msg;
+		
 		public ChatMessagesList ()
 		{
 			InitializeComponent ();
 		}
-			
+
 		protected override void OnBindingContextChanged ()
 		{
 			base.OnBindingContextChanged ();
@@ -22,47 +24,64 @@ namespace UXDivers.Artina.Grial
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
 
+			msg = viewModel.Messages;
+
+
 			viewModel.PropertyChanged += (sender, e) => {
 
-				if (e.PropertyName == "Messages") 
-				{
-					SetupChat(viewModel.Messages);
+				if (e.PropertyName == "Messages") {
+					SetupChat (viewModel.Messages);
 				}
 
 			};
 
-
-
-	
-
-		
+			SetupChat (viewModel.Messages);
 
 		}
 
-		public void SetupChat(List<MessageItem> messages){
-
-
+		public void SetupChat (List<MessageItem> messages)
+		{
 			//User FirstUser = SampleData.ChatMessagesList[0].From;
 			View widget;
 
-			foreach (var message in messages) {
+			if (msg == messages) 
+			{
+				foreach (var message in messages) {
 
-				if (message.IdSender == (int)((UserItem) Application.Current.Properties["User"]).Id ) {
-					widget = new ChatLeftMessageItemTemplate ();
-				} else {
-					widget = new ChatRightMessageItemTemplate ();
+					widget = CompareId (message);
+
+					widget.BindingContext = message;
+
+					ChatMessagesListView.Children.Add (widget);
+
 				}
+			} else { 
+
+
+				var message = messages.LastOrDefault ();
+
+				widget = CompareId (message);
 
 				widget.BindingContext = message;
-				ChatMessagesListView.Children.Add( widget);
+
+				ChatMessagesListView.Children.Add (widget);
 
 			}
 
+		}
 
-
-
+		public View CompareId (MessageItem message)
+		{
+			if (message.IdSender == (int)((UserItem)Application.Current.Properties ["User"]).Id) {
+				return new ChatLeftMessageItemTemplate ();
+			} else {
+				return new ChatRightMessageItemTemplate ();
+			}
 
 		}
+
+
+
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
 		{

@@ -57,13 +57,13 @@ namespace UXDivers.Artina.Grial
 				return new Command (async () => {
 					var User = new UserItem {
 
-//						Name = Name,
-//						FirstName = FirstName,
-//						NickName = NickName,
-//						Function = Function,
+						Name = Name,
+						FirstName = FirstName,
+						NickName = NickName,
+						Function = Function,
 						Email= Email,
 						Password = Password,
-//						Language = Language,
+						Language = Language,
 					};
 
 					var DB = new UserItemDatabase ();

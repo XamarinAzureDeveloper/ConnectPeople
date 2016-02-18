@@ -21,16 +21,26 @@ namespace UXDivers.Artina.Grial
 			return database.Insert (Msg);
 		}
 
-		public IEnumerable<MessageItem> GetItems ()
+//		public IEnumerable<MessageItem> GetItems (int currentUserId)
+//		{
+//			return (from i in database.Table<MessageItem>().Where (m => m.IdSender == currentUserId)
+//				select i)?.ToList();
+//		}
+
+
+		public IEnumerable<MessageItem> GetItems (int currentUserId, int InterlocutorId)
 		{
-			return (from i in database.Table<MessageItem> ()
-				select i)?.ToList();
+			var request = database.Table<MessageItem> ().Where (m => m.IdRecipient == currentUserId && m.IdSender == InterlocutorId 
+				|| m.IdRecipient == InterlocutorId && m.IdSender == currentUserId).OrderBy(m => m.CreateDate).ToList();
+
+			return request;
+
 		}
 
-//		public UserItem GetItem (string email, string password)
-//		{
-//			return database.Table<UserItem> ().FirstOrDefault (a => a.Email == email && a.Password == password);
-//		}
+		//		public UserItem GetItem (string email, string password)
+		//		{
+		//			return database.Table<UserItem> ().FirstOrDefault (a => a.Email == email && a.Password == password);
+		//		}
 	}
 }
 

@@ -10,5 +10,6 @@
 		<StackLayout 
 			x:Name="ChatMessagesListView"
 			Padding="20" />
+
 	</ScrollView>
 </ContentPage>

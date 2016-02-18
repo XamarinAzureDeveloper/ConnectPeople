@@ -8,38 +8,44 @@
 	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
 	Title="Sign Up">
 	<ScrollView>
-		<!-- MAIN CONTAINER -->
-		<Grid
-			ColumnSpacing="0" 
-			RowSpacing="0" 
-			HorizontalOptions="Fill"
-			VerticalOptions="FillAndExpand" >
 
-			<Grid.RowDefinitions>
-				<RowDefinition Height="100" />
-				<RowDefinition Height="*" />
-				<RowDefinition Height="100" />
-			</Grid.RowDefinitions>
+	<StackLayout>
 
-			<!-- LOGO -->
-			<commonViews:BrandBlock 
-				Grid.Row="0"
-				VerticalOptions="Center"
-			/>
+		<StackLayout Orientation="Horizontal">
+					<commonViews:BrandBlock 
+					HorizontalOptions="Start"
+					VerticalOptions="Center"
+					/>
+		</StackLayout>
 
-			<!---FIELDS CONTAINER-->
-			<Grid 
-				Padding="40, 0"
-				ColumnSpacing="0" 
-				RowSpacing="0" 
-				VerticalOptions="CenterAndExpand"
-				Grid.Row="1"
-				HeightRequest="160">
-
-				<StackLayout
-					Grid.Row="0"
-					VerticalOptions="StartAndExpand" >
+		<StackLayout
+					VerticalOptions="StartAndExpand" Padding="20" >
 					<!---EMAIL FIELD--> 
+					<Entry
+						Placeholder="Name"
+						Text= "{Binding Name}"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+					<Entry
+						Placeholder="FirstName"
+						Text= "{Binding FirstName}"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+					<Entry
+						Placeholder="NickName"
+						Text= "{Binding NickName}"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+					<Entry
+						Placeholder="Function"
+						Text= "{Binding Function}"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+
+					<Entry
+						Placeholder="Language"
+						Text= "{Binding Language}"
+						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+					
 					<Entry
 						Placeholder="E-mail"
 						Text= "{Binding Email}"
@@ -50,35 +56,31 @@
 						Text=" Please enter a valid e-mail " IsVisible="false"
 						Style="{DynamicResource ValidationEntryErrorStyle}"
 						/>
+					<Entry 
+						Placeholder="Password"
+						Text= "{Binding Password}"
+						IsPassword="true"
+						Style="{DynamicResource ArtinaLoginEntryStyle}"						 
+						/>
 
 				</StackLayout>
+				<!-- FOOTER -->
+				<StackLayout 
+					HorizontalOptions="Fill"
+					VerticalOptions="EndAndExpand" 
+					Padding="20">
 
-				<!---PASSWORD FIELD-->
-				<Entry 
-					Grid.Row="2"
-					Placeholder="Password"
-					Text= "{Binding Password}"
-					IsPassword="true"
-					Style="{DynamicResource ArtinaLoginEntryStyle}" 
-					VerticalOptions="StartAndExpand" />
+					<Button
+						Style="{DynamicResource PrimaryActionButtonStyle}"
+						VerticalOptions="End"
+						Text="Save"
+						Command="{Binding SaveItem}" />
+				</StackLayout>
 
-			</Grid>
+	</StackLayout>
 
-				
-			<!-- FOOTER -->
-			<StackLayout 
-				HorizontalOptions="Fill"
-				VerticalOptions="EndAndExpand" 
-				Padding="20"
-				Grid.Row="2" >
-
-				<Button
-					Style="{DynamicResource PrimaryActionButtonStyle}"
-					VerticalOptions="End"
-					Text="Save"
-					Command="{Binding SaveItem}" />
-			</StackLayout>
-
-		</Grid>
 	</ScrollView>
 </ContentPage>
+
+
+

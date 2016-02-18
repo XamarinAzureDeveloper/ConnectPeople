@@ -143,3 +143,5 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.dll.mdb
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.MessagePageOld.xaml.g.cs
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/obj/Debug/UXDivers.Artina.Grial.Views.MessagePageOld.xaml

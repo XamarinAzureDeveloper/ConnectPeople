@@ -3,6 +3,7 @@ using SQLite;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace UXDivers.Artina.Grial
 {

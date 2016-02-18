@@ -21,7 +21,7 @@ namespace UXDivers.Artina.Grial
 			ViewFactory.Register<HomePage, HomeViewModel> ();
 			ViewFactory.Register<MenuPage, MenuViewModel> ();
 			ViewFactory.Register<SignUpPage, SignUpViewModel> ();
-			ViewFactory.Register<MessagePage, MessageViewModel> ();
+			ViewFactory.Register<ChatMessagesList, MessageViewModel> ();
 
 		}
 		public Main ()

@@ -45,7 +45,7 @@
 			<Label
 				TextColor="#FFFFFF"
 				FontSize="14"
-				Text="{ Binding Body }" 
+				Text="{ Binding ContentText }" 
 			/>
 		</StackLayout>
 
@@ -79,7 +79,7 @@
 			TextColor="#FF212121"
 			HorizontalTextAlignment="End"
 			VerticalTextAlignment="Center"
-			Text="{ Binding When }" 
+			Text="{ Binding CreateDate }" 
 		/>
 
 

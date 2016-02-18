@@ -104,7 +104,7 @@ namespace UXDivers.Artina.Grial
 
 		public ICommand SaveItem {
 			get {
-				return new Command (async (M) => {
+				return new Command ( async (M) => {
 					var Msg = new MessageItem {
 
 						ContentText = ContentText,

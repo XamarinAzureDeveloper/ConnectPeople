@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="UXDivers.Artina.Grial.MessagePageOld"
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	BackgroundColor="White"
+	Title="{Binding Name}">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+				<ListView x:Name="listViewMessages"
+					BackgroundColor="White"
+					RowHeight="200"
+					HasUnevenRows="true"
+					IsPullToRefreshEnabled="true"
+					Refreshing="OnRefreshing"
+					ItemTapped="OnItemTapped"
+					ItemsSource="{ Binding Messages }">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<ViewCell.ContextActions>
+									<MenuItem Clicked="OnMore"
+										Text="More" />
+									<MenuItem Clicked="OnDelete"
+										Text="Delete"
+										IsDestructive="True" />
+								</ViewCell.ContextActions>
+								<!--premier block message-->
+								<StackLayout Spacing="0"
+									Orientation="Horizontal"
+									Padding="10, 5, 10, 5"
+									HorizontalOptions="FillAndExpand">
+									<artina:CircleImage Source="{Binding From.Avatar}"
+										Style="{ StaticResource Avatar }"
+										Aspect="AspectFill"
+										HorizontalOptions="Center"
+										VerticalOptions="Start"
+										TranslationX="8"
+										TranslationY="14" />
+									<StackLayout Padding="10, 0, 0, 0"
+										Spacing="0"
+										Orientation="Horizontal"
+										HorizontalOptions="FillAndExpand">
+										<StackLayout HorizontalOptions="FillAndExpand"
+											Spacing="0"
+											Padding="10"
+											BackgroundColor="White">
+											<StackLayout Orientation="Horizontal">
+			
+												<Label Text="{Binding IdSender}"
+													HorizontalOptions="Fill"
+													VerticalOptions="EndAndExpand"
+													TextColor="#FF212121" />
+
+												<Label FontAttributes="Bold"
+													TextColor="#FF777777"
+													Text="{Binding IdRecipient}"
+													HorizontalOptions="FillAndExpand"
+													VerticalOptions="EndAndExpand" />
+
+												<Label Style="{StaticResource FontIcon}"
+													Text=""
+													HorizontalOptions="EndAndExpand"
+													VerticalOptions="Center"
+													IsVisible="{Binding HasAttachment}" />
+
+												<Label Text="{Binding Email}"
+													FontSize="12"
+													HorizontalTextAlignment="End"
+													HorizontalOptions="End"
+													VerticalOptions="Center" />
+											</StackLayout>
+											<StackLayout Orientation="Horizontal"
+												BackgroundColor="Green">
+												<Label Text="{Binding CreateDate}"
+													HorizontalOptions="FillAndExpand"
+													VerticalOptions="FillAndExpand" />
+											</StackLayout>
+											<StackLayout Orientation="Horizontal"
+												Padding="0,8,0,0">
+												<Label Text="{Binding ContentText}"
+													LineBreakMode="WordWrap"
+													HorizontalOptions="FillAndExpand"
+													VerticalOptions="FillAndExpand" />
+												<Label HorizontalTextAlignment="End"
+													HorizontalOptions="End"
+													VerticalOptions="EndAndExpand"
+													FontSize="16"
+													WidthRequest="24"
+													Style="{StaticResource FontIcon}"
+													TextColor="#FFFFDC77" />
+											</StackLayout>
+										</StackLayout>
+									</StackLayout>
+								</StackLayout>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+				<StackLayout VerticalOptions="End">
+					<Entry Placeholder="Write ..."
+						Text="{Binding ContentText}" />
+					<Button Text="send"
+						Command="{Binding SaveItem}">
+					</Button>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

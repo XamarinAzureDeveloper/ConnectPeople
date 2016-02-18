@@ -1,15 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
-	xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="UXDivers.Artina.Grial.ChatMessagesList"
 	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	Title="Chat Messages List">
+	<StackLayout>
+		<ScrollView>
+			<StackLayout x:Name="ChatMessagesListView"
+				Padding="20" />
+		</ScrollView>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+			<Button Style="{DynamicResource PrimaryActionButtonStyle}"
+				Text="Trans" 
+				/>
 
-	<ScrollView>
-		<StackLayout 
-			x:Name="ChatMessagesListView"
-			Padding="20" />
+			<Entry Placeholder="Write ..." 
+				Text="{Binding ContentText}" HorizontalOptions="CenterAndExpand"/>
 
-	</ScrollView>
+			<Button Style="{DynamicResource PrimaryActionButtonStyle}"
+				Text="Send"
+				Command="{Binding SaveItem}" 
+				/>
+		</StackLayout>
+	</StackLayout>
 </ContentPage>

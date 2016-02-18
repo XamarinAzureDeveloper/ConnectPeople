@@ -60,7 +60,7 @@
 
 			<Color x:Key="PlaceholderColor">#22ffffff</Color>
 			<Color x:Key="PlaceholderColorEntry">#77FFFFFF</Color>
-			<Color x:Key="MainMenuBackgroundColor">#283441</Color>
+			<Color x:Key="MainMenuBackgroundColor">#BDCCD4</Color>
 			<Color x:Key="MainMenuSeparatorColor">#253642</Color>
 			<Color x:Key="ListViewSeparatorColor">#77CCCCCC</Color>
 			<Color x:Key="LightBorderColor">#FFF</Color>

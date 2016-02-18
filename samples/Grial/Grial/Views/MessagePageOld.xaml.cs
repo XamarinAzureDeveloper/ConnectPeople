@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace UXDivers.Artina.Grial
 {
-	public partial class MessagePage : ContentPage
+	public partial class MessagePageOld : ContentPage
 	{
 		MessageItemDatabase DBMessage = new MessageItemDatabase ();
 
-		public MessagePage ()
+		public MessagePageOld ()
 		{
 			InitializeComponent ();
 			//listViewMessages.ItemsSource = DBMessage.GetItems ();
@@ -29,7 +29,7 @@ namespace UXDivers.Artina.Grial
 			viewModel.NavigateBackDelegate = NavigateBack;
 
 
-//			SetupChat(viewModel.Messages);
+			//SetupChat(viewModel.Messages);
 
 
 	
@@ -39,9 +39,9 @@ namespace UXDivers.Artina.Grial
 
 
 
-//
-//	
-//
+
+	
+
 //		public void SetupChat(List<MessageItem> messages){
 //			var chatMessagesList = messages;
 //
@@ -62,7 +62,8 @@ namespace UXDivers.Artina.Grial
 //			}
 //			widget.BindingContext = chatMessagesList[index];
 //			ChatMessagesListView.Children.Add( widget);
-		//		} }
+//				}
+//		}
 	
 
 

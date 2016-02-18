@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace UXDivers.Artina.Grial
 {
 	public class ChatViewModel
 	{
 		
-		public User FirstUser{
+		public User FirstUser {
 			get;
 			set;
 		}
 
-		public User SecondUser{
+		public User SecondUser {
 			get;
 			set;
 		}
@@ -24,13 +25,8 @@ namespace UXDivers.Artina.Grial
 			get;
 			set;
 		}
-	
-		public ChatViewModel (
-			User firstUser,
-			User secondUser,
-			string when,
-			List<ChatMessage> messages
-		)
+
+		public ChatViewModel (User firstUser, User secondUser, string when, List<ChatMessage> messages)
 		{
 			FirstUser = firstUser;
 			SecondUser = secondUser;

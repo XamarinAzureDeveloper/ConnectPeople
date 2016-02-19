@@ -1,15 +1,15 @@
-UXDivers.Artina.Grial.MainActivity, UXDivers.Artinal.Grial.Droid;md5b3847d1d879e76ad14e9bdb6c1b5895d.MainActivity
-UXDivers.Artina.Grial.MainActivity, UXDivers.Artinal.Grial.Droid, Version=1.2.5892.29174, Culture=neutral, PublicKeyToken=null;md5b3847d1d879e76ad14e9bdb6c1b5895d.MainActivity
-UXDivers.Artina.Grial.MainActivity;md5b3847d1d879e76ad14e9bdb6c1b5895d.MainActivity
-uxdivers.artina.grial.MainActivity;md5b3847d1d879e76ad14e9bdb6c1b5895d.MainActivity
-UXDivers.Artina.Grial.SplashActivity, UXDivers.Artinal.Grial.Droid;md5b3847d1d879e76ad14e9bdb6c1b5895d.SplashActivity
-UXDivers.Artina.Grial.SplashActivity, UXDivers.Artinal.Grial.Droid, Version=1.2.5892.29174, Culture=neutral, PublicKeyToken=null;md5b3847d1d879e76ad14e9bdb6c1b5895d.SplashActivity
-UXDivers.Artina.Grial.SplashActivity;md5b3847d1d879e76ad14e9bdb6c1b5895d.SplashActivity
-uxdivers.artina.grial.SplashActivity;md5b3847d1d879e76ad14e9bdb6c1b5895d.SplashActivity
-UXDivers.Artina.Grial.CustomFontLabelRenderer, UXDivers.Artinal.Grial.Droid;md5b3847d1d879e76ad14e9bdb6c1b5895d.CustomFontLabelRenderer
-UXDivers.Artina.Grial.CustomFontLabelRenderer, UXDivers.Artinal.Grial.Droid, Version=1.2.5892.29174, Culture=neutral, PublicKeyToken=null;md5b3847d1d879e76ad14e9bdb6c1b5895d.CustomFontLabelRenderer
-UXDivers.Artina.Grial.CustomFontLabelRenderer;md5b3847d1d879e76ad14e9bdb6c1b5895d.CustomFontLabelRenderer
-uxdivers.artina.grial.CustomFontLabelRenderer;md5b3847d1d879e76ad14e9bdb6c1b5895d.CustomFontLabelRenderer
+UXDivers.Artina.Grial.MainActivity, UXDivers.Artinal.Grial.Droid;md52220572f5b78a5ccc44c4afe674eb25b.MainActivity
+UXDivers.Artina.Grial.MainActivity, UXDivers.Artinal.Grial.Droid, Version=1.2.5893.21421, Culture=neutral, PublicKeyToken=null;md52220572f5b78a5ccc44c4afe674eb25b.MainActivity
+UXDivers.Artina.Grial.MainActivity;md52220572f5b78a5ccc44c4afe674eb25b.MainActivity
+uxdivers.artina.grial.MainActivity;md52220572f5b78a5ccc44c4afe674eb25b.MainActivity
+UXDivers.Artina.Grial.SplashActivity, UXDivers.Artinal.Grial.Droid;md52220572f5b78a5ccc44c4afe674eb25b.SplashActivity
+UXDivers.Artina.Grial.SplashActivity, UXDivers.Artinal.Grial.Droid, Version=1.2.5893.21421, Culture=neutral, PublicKeyToken=null;md52220572f5b78a5ccc44c4afe674eb25b.SplashActivity
+UXDivers.Artina.Grial.SplashActivity;md52220572f5b78a5ccc44c4afe674eb25b.SplashActivity
+uxdivers.artina.grial.SplashActivity;md52220572f5b78a5ccc44c4afe674eb25b.SplashActivity
+UXDivers.Artina.Grial.CustomFontLabelRenderer, UXDivers.Artinal.Grial.Droid;md52220572f5b78a5ccc44c4afe674eb25b.CustomFontLabelRenderer
+UXDivers.Artina.Grial.CustomFontLabelRenderer, UXDivers.Artinal.Grial.Droid, Version=1.2.5893.21421, Culture=neutral, PublicKeyToken=null;md52220572f5b78a5ccc44c4afe674eb25b.CustomFontLabelRenderer
+UXDivers.Artina.Grial.CustomFontLabelRenderer;md52220572f5b78a5ccc44c4afe674eb25b.CustomFontLabelRenderer
+uxdivers.artina.grial.CustomFontLabelRenderer;md52220572f5b78a5ccc44c4afe674eb25b.CustomFontLabelRenderer
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

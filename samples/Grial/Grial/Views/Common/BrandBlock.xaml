@@ -30,12 +30,12 @@
 			Spacing="0">
 			<Label 
 				Style="{ DynamicResource BrandNameStyle }"
-				Text="GRIAL" 
+				Text="Connect" 
 				FontAttributes="Bold" 
 				VerticalTextAlignment="Start"/>
 			<Label 
 				Style="{ DynamicResource BrandNameStyle }"
-				Text="UI.KIT" 
+				Text="People" 
 				VerticalTextAlignment="Start"/>
 		</StackLayout>
 

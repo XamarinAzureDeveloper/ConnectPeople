@@ -1,26 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="UXDivers.Artina.Grial.ChatMessagesList"
 	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	Title="Chat Messages List">
-	<StackLayout>
-		<ScrollView>
-			<StackLayout x:Name="ChatMessagesListView"
+	<StackLayout
+		VerticalOptions="FillAndExpand">
+		<ScrollView x:Name="ScrollviewChat" Orientation = "Vertical" VerticalOptions="StartAndExpand" >
+			<StackLayout
+				x:Name="ChatMessagesListView"
 				Padding="20" />
 		</ScrollView>
-		<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-			<Button Style="{DynamicResource PrimaryActionButtonStyle}"
-				Text="Trans" 
-				/>
-
-			<Entry Placeholder="Write ..." 
-				Text="{Binding ContentText}" HorizontalOptions="FillAndExpand"/>
-
-			<Button Style="{DynamicResource PrimaryActionButtonStyle}"
-				Text="Send"
-				Command="{Binding SaveItem}" 
-				/>
+		<StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+				<Button
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					Text="Trans" />
+				<Entry
+					Placeholder="Write ..."
+					Text="{Binding ContentText}" Style="{DynamicResource ArtinaLoginEntryStyle}" 
+					/>
+				<Button
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					Text="Send"
+					Command="{Binding SaveItem}" />
+			</StackLayout>
 		</StackLayout>
 	</StackLayout>
 </ContentPage>

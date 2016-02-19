@@ -13,11 +13,11 @@ namespace UXDivers.Artina.Grial
 		{
 		}
 
-		UserItem UserSelected;
+		//UserItem UserSelected;
 
 		public MessageViewModel (UserItem U)
 		{
-			UserSelected = U;
+			//UserSelected = U;
 			InterlocutorId = U.Id;
 			Email = U.Email;
 

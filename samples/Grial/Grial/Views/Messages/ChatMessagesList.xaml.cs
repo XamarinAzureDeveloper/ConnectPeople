@@ -8,11 +8,13 @@ namespace UXDivers.Artina.Grial
 {
 	public partial class ChatMessagesList : ContentPage
 	{
-		MessageItem msg;
-		
+		List<MessageItem> msg;
+
 		public ChatMessagesList ()
 		{
 			InitializeComponent ();
+			//ScrollviewChat.ScrollY = ScrollView.YProperty 
+
 		}
 
 		protected override void OnBindingContextChanged ()
@@ -30,7 +32,10 @@ namespace UXDivers.Artina.Grial
 			viewModel.PropertyChanged += (sender, e) => {
 
 				if (e.PropertyName == "Messages") {
-					SetupChat (viewModel.Messages);
+
+					OnBindingContextChanged();
+					//SetupChat (viewModel.Messages);
+
 				}
 
 			};
@@ -44,20 +49,19 @@ namespace UXDivers.Artina.Grial
 			//User FirstUser = SampleData.ChatMessagesList[0].From;
 			View widget;
 
-			if (msg == messages) 
-			{
+			if (msg == messages) {
+
+
 				foreach (var message in messages) {
 
 					widget = CompareId (message);
-
-					widget.BindingContext = message;
-
 					ChatMessagesListView.Children.Add (widget);
-
+					widget.BindingContext = message;
 				}
+
+
 			} else { 
-
-
+				
 				var message = messages.LastOrDefault ();
 
 				widget = CompareId (message);

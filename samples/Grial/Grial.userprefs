@@ -1,14 +1,6 @@
 ﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.7e131882" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/Messages/ChatMessagesList.xaml.cs">
-    <Files>
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="21" Column="16" />
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="39" Column="4" />
-      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="33" Column="19" />
-      <File FileName="Grial/Services/MessageItemDatabase.cs" Line="9" Column="2" />
-      <File FileName="Grial/ViewModel/ViewModel.cs" Line="43" Column="3" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MyNexus5" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

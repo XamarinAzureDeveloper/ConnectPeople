@@ -17,11 +17,15 @@ namespace UXDivers.Artina.Grial {
     public partial class ChatMessagesList : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ScrollView ScrollviewChat;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.StackLayout ChatMessagesListView;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ChatMessagesList));
+            ScrollviewChat = this.FindByName <global::Xamarin.Forms.ScrollView>("ScrollviewChat");
             ChatMessagesListView = this.FindByName <global::Xamarin.Forms.StackLayout>("ChatMessagesListView");
         }
     }

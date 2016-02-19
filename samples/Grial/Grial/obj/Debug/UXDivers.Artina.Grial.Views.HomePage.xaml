@@ -29,12 +29,12 @@
 							<artina:CircleImage Source="{ StaticResource ThemeAvatarSample1Image }"
 								Style="{ StaticResource Avatar }" />
 							<StackLayout Orientation="Vertical" >
-								<Label Text="{Binding Id}" />
-								<Label Text="{Binding Email}" />
+								<Label Text="{Binding Name}" />
+								<Label Text="{Binding Function}" />
 							</StackLayout>
 							<StackLayout Orientation="Vertical" HorizontalOptions="End" >
-								<Label Text="CreateDate" />
-								<Label Text="Langue" />
+								<Label Text="{Binding FirstName}" />
+								<Label Text="{Binding Language}" />
 							</StackLayout>
 						</StackLayout>
 					

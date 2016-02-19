@@ -28,6 +28,42 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref id, value); }
 		}
 
+		int name;
+		public int Name {
+			get{ return name; }
+			set{ SetProperty (ref name, value); }
+		}
+
+		int firstName;
+		public int FirstName {
+			get{ return firstName; }
+			set{ SetProperty (ref firstName, value); }
+		}
+
+		int nickName;
+		public int NickName {
+			get{ return nickName; }
+			set{ SetProperty (ref nickName, value); }
+		}
+
+		int function;
+		public int Function {
+			get{ return function; }
+			set{ SetProperty (ref function, value); }
+		}
+
+
+		string email;
+		public string Email {
+			get{ return email; }
+			set{ SetProperty (ref email, value); }
+		}
+
+		string language;
+		public string Language {
+			get{ return language; }
+			set{ SetProperty (ref language, value); }
+		}
 
 		UserItem selectedItem;
 		public UserItem SelectedItem {

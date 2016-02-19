@@ -4,8 +4,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:icon="@drawable/icon" android:label="Grial UIkit" android:largeHeap="@bool/largeheap" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@android:color/transparent" android:label="Artina Grial" android:theme="@style/AppTheme" android:name="md52220572f5b78a5ccc44c4afe674eb25b.MainActivity" />
-    <activity android:icon="@drawable/icon" android:label="Artina Grial" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md52220572f5b78a5ccc44c4afe674eb25b.SplashActivity">
+    <activity android:icon="@android:color/transparent" android:label="Artina Grial" android:theme="@style/AppTheme" android:name="md5ac183a9d86d78f5435906a1728390636.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="Artina Grial" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5ac183a9d86d78f5435906a1728390636.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

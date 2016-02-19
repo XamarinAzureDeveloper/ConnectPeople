@@ -83,7 +83,7 @@
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					VerticalOptions="End"
 					Text="Sign up"
-					Command="{Binding NavigateCommand}" />
+					Command="{Binding NavigateCommand}"	/>
 			</StackLayout>
 
 		</Grid>

@@ -286,6 +286,7 @@
 			<Style x:Key="PrimaryActionButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundedButtonStyle}">
 				<Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
 				<Setter Property="TextColor" Value="{StaticResource LabelButtonColor}"/>
+				<Setter Property="BorderColor" Value="{StaticResource InverseTextColor}"/>
 				<Setter Property="HeightRequest" Value="{StaticResource BaseButtonHeight}"/>	 
 			</Style>
 
@@ -309,7 +310,7 @@
 				<Style.Triggers>
 					<Trigger TargetType="Entry"
 						Property="IsFocused" Value="True">
-						<Setter Property="artina:EntryProperties.BorderColor" Value="{StaticResource AccentColor}" />
+						<Setter Property="artina:EntryProperties.BorderColor" Value="{StaticResource InverseTextColor}" />
 					</Trigger>
 				</Style.Triggers>
 			</Style>
@@ -321,12 +322,12 @@
 
 			<Style x:Key="ArtinaLoginEntryStyle" TargetType="Entry" BasedOn="{ StaticResource LoginEntryStyle }" >
 				<Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine"/>
-				<Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource TranslucidWhite }"/>
+				<Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource InverseTextColor }"/>
 				<Setter Property="artina:EntryProperties.PlaceholderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
 				<Style.Triggers>
 					<Trigger TargetType="Entry"
 						Property="IsFocused" Value="True">
-						<Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource AccentColor }" />
+						<Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource InverseTextColor }" />
 					</Trigger>
 				</Style.Triggers>
 			</Style>

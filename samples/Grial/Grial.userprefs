@@ -1,8 +1,11 @@
 ﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MyNexus5" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="65" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="71" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

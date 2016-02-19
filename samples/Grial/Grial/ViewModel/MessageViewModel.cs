@@ -51,6 +51,12 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref email, value); }
 		}
 
+		int nickName;
+		public int NickName {
+			get{ return nickName; }
+			set{ SetProperty (ref nickName, value); }
+		}
+
 		int currentUserId;
 
 		public int CurrentUserId {

@@ -21,7 +21,7 @@ namespace UXDivers.Artina.Grial
 
 			Appearance.Configure ();
 
-			LoadApplication (new App ());
+			LoadApplication (new Main ());
 
 			return base.FinishedLaunching (app, options);
 		}

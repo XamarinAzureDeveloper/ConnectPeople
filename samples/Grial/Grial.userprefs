@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
+﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MyNexus5" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

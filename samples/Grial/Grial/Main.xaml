@@ -324,6 +324,7 @@
 				<Setter Property="artina:EntryProperties.BorderStyle" Value="BottomLine"/>
 				<Setter Property="artina:EntryProperties.BorderColor" Value="{ StaticResource InverseTextColor }"/>
 				<Setter Property="artina:EntryProperties.PlaceholderColor" Value="{ StaticResource PlaceholderColorEntry }"/>
+<!--				<Setter Property="artina:EntryProperties.HeightRequest" Value="45" />-->
 				<Style.Triggers>
 					<Trigger TargetType="Entry"
 						Property="IsFocused" Value="True">

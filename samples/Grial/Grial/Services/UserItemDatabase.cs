@@ -21,6 +21,11 @@ namespace UXDivers.Artina.Grial
 			return database.Insert (User);
 		}
 
+		public int DeleteItemFromDB (UserItem User)
+		{
+			return database.Delete (User);
+		}
+
 		public IEnumerable<UserItem> GetItems ()
 		{
 			return (from i in database.Table<UserItem> ()
@@ -31,9 +36,6 @@ namespace UXDivers.Artina.Grial
 		{
 			return database.Table<UserItem> ().Where (x => x.Id != id);
 		}
-
-
-
 
 		public UserItem GetItem (string email, string password)
 		{

@@ -6,7 +6,7 @@
 	xmlns:sample="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	xmlns:local="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"
-	Title="Theme">
+	Title="Connect People">
 	<ScrollView>
 		<StackLayout VerticalOptions="Fill"
 			Padding="20"

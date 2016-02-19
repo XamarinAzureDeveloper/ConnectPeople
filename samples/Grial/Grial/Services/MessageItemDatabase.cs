@@ -22,6 +22,11 @@ namespace UXDivers.Artina.Grial
 			return database.Insert (Msg);
 		}
 
+		public int DeleteItemFromDB (MessageItem Msg)
+		{
+			return database.Delete (Msg);
+		}
+
 //		public IEnumerable<MessageItem> GetItems (int currentUserId)
 //		{
 //			return (from i in database.Table<MessageItem>().Where (m => m.IdSender == currentUserId)

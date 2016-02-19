@@ -81,9 +81,5 @@
       <LogicalName>AppIcons60x60@2x~car.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/actool/bundle/AppIcons60x60@3x~car.png">
-      <LogicalName>AppIcons60x60@3x~car.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
   </ItemGroup>
 </Project>

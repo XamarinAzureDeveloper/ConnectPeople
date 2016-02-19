@@ -4,7 +4,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="UXDivers.Artina.Grial.ChatMessagesList"
 	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
-	Title="Chat Messages List">
+	Title="{Binding FirstName}">
 	<StackLayout
 		VerticalOptions="FillAndExpand">
 		<ScrollView x:Name="ScrollviewChat" Orientation = "Vertical" VerticalOptions="StartAndExpand" >
@@ -13,15 +13,15 @@
 				Padding="20" />
 		</ScrollView>
 		<StackLayout>
-			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-				<Button
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Button HorizontalOptions="Start"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					Text="Trans" />
-				<Entry
+				<Entry HorizontalOptions="FillAndExpand"
 					Placeholder="Write ..."
-					Text="{Binding ContentText}" Style="{DynamicResource ArtinaLoginEntryStyle}" 
+					Text="{Binding ContentText}" 
 					/>
-				<Button
+				<Button HorizontalOptions="End"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					Text="Send"
 					Command="{Binding SaveItem}" />

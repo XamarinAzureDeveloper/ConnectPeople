@@ -24,32 +24,32 @@
 					<Entry
 						Placeholder="Name"
 						Text= "{Binding Name}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 
 					<Entry
 						Placeholder="FirstName"
 						Text= "{Binding FirstName}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 
 					<Entry
 						Placeholder="NickName"
 						Text= "{Binding NickName}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 
 					<Entry
 						Placeholder="Function"
 						Text= "{Binding Function}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 
 					<Entry
 						Placeholder="Language"
 						Text= "{Binding Language}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 					
 					<Entry
 						Placeholder="E-mail"
 						Text= "{Binding Email}"
-						Style="{DynamicResource ArtinaLoginEntryStyle}" />
+						Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
 
 					<Label
 						HorizontalOptions="Start"
@@ -60,8 +60,7 @@
 						Placeholder="Password"
 						Text= "{Binding Password}"
 						IsPassword="true"
-						Style="{DynamicResource ArtinaLoginEntryStyle}"						 
-						/>
+						Style="{DynamicResource ArtinaLoginEntryStyle}"	HeightRequest="45" />
 
 				</StackLayout>
 				<!-- FOOTER -->

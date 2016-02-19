@@ -74,7 +74,7 @@ namespace UXDivers.Artina.Grial
 					if (U != null) {
 						await NavigateToViewModel (new MessageViewModel (U)); 
 						Debug.WriteLine (SelectedItem.Name);
-						//selecteditem null pour ne pas avoir la couleur orange
+						//selecteditem null pour ne pas avoir la couleur
 						SelectedItem = null;
 					}
 				}));

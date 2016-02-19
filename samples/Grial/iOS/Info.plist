@@ -39,8 +39,6 @@
 	<array>
 		<string>fontawesome-webfont.ttf</string>
 	</array>
-	<key>CFBundleDisplayName</key>
-	<string>Grial</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -53,6 +51,29 @@
 				<true/>
 				<key>NSTemporaryExceptionMinimumTLSVersion</key>
 				<string>TLSv1.1</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>CFBundleName</key>
+	<string>Connect People</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+			<key>TintColor</key>
+			<dict>
+				<key>Red</key>
+				<real>1</real>
+				<key>Green</key>
+				<real>0.839017318989853</real>
+				<key>Blue</key>
+				<real>0.161287861448081</real>
 			</dict>
 		</dict>
 	</dict>

@@ -1,10 +1,20 @@
-﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.7e131882" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/Messages/ChatMessagesList.xaml.cs">
+    <Files>
+      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="21" Column="1" />
+      <File FileName="Grial/Views/Messages/MessagesList.xaml" Line="1" Column="1" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="16" Column="88" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="60" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="65" column="1" />
-      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="71" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="24" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="44" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="53" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="64" column="1" />
+      <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="38" column="6" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

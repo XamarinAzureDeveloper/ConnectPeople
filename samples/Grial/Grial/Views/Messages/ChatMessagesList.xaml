@@ -13,7 +13,7 @@
 				Padding="20" />
 		</ScrollView>
 		<StackLayout>
-			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
 				<Button HorizontalOptions="Start"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					Text="Trans" />

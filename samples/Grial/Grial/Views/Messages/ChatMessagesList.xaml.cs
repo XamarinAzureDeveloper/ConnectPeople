@@ -13,7 +13,8 @@ namespace UXDivers.Artina.Grial
 		public ChatMessagesList ()
 		{
 			InitializeComponent ();
-			//ScrollviewChat.ScrollY = ScrollView.YProperty 
+			//ScrollviewChat.ScrollY = 
+			//ScrollView.YProperty 
 
 		}
 
@@ -33,8 +34,8 @@ namespace UXDivers.Artina.Grial
 
 				if (e.PropertyName == "Messages") {
 
-					OnBindingContextChanged();
-					//SetupChat (viewModel.Messages);
+					//OnBindingContextChanged ();
+					SetupChat (viewModel.Messages);
 
 				}
 
@@ -51,25 +52,18 @@ namespace UXDivers.Artina.Grial
 
 			if (msg == messages) {
 
-
 				foreach (var message in messages) {
-
-					widget = CompareId (message);
-					ChatMessagesListView.Children.Add (widget);
-					widget.BindingContext = message;
+						widget = CompareId (message);
+						ChatMessagesListView.Children.Add (widget);
+						widget.BindingContext = message;
+					
 				}
-
-
 			} else { 
 				
 				var message = messages.LastOrDefault ();
-
 				widget = CompareId (message);
-
 				widget.BindingContext = message;
-
 				ChatMessagesListView.Children.Add (widget);
-
 			}
 
 		}
@@ -81,7 +75,6 @@ namespace UXDivers.Artina.Grial
 			} else {
 				return new ChatRightMessageItemTemplate ();
 			}
-
 		}
 
 

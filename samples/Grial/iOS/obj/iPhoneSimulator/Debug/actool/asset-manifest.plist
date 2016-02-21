@@ -26,6 +26,7 @@
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons76x76~ipad.png</string>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons76x76@2x~ipad.png</string>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons60x60@2x~car.png</string>
+			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons60x60@3x~car.png</string>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
@@ -121,45 +122,55 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-58.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-60.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-64.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-80.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-87.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-88.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-Small-40.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-Small-40@2x.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-Small-40@3x.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-Small-50.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-Small-50@2x.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-Small.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-Small@2x.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-Small@3x.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon@2x.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][iTunesArtwork.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][iTunesArtwork@2x.png]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/Resources/Images.xcassets</string>
 			<key>message</key>
-			<string>The app icon set "AppIcons" has 8 unassigned children.</string>
+			<string>The app icon set "AppIcons" has 18 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[car][60x60][][][3x]</string>
+				<string>./LaunchImage.launchimage/[ipad][][1x][portrait][full-screen][]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/Resources/Images.xcassets</string>
 			<key>message</key>
-			<string>The file "Icon-60@3x.png" for the image set "AppIcons" does not exist.</string>
+			<string>LaunchImage.launchimage/Default-Portrait.png is 768x1004 but should be 768x1024.</string>
 			<key>type</key>
-			<string>Missing Content</string>
+			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[mac][256x256][][][2x]</string>
+				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/iOS/Resources/Images.xcassets</string>
 			<key>message</key>
-			<string>The file "Icon-512.png" for the image set "AppIcons" does not exist.</string>
+			<string>LaunchImage.launchimage/Default-Portrait@2x.png is 1536x2008 but should be 1536x2048.</string>
 			<key>type</key>
-			<string>Missing Content</string>
+			<string>Ambiguous Content</string>
 		</dict>
 	</array>
 </dict>

@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Translate.cs">
+    <Files>
+      <File FileName="Grial/Translate.cs" Line="16" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="65" column="1" />

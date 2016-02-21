@@ -13,13 +13,12 @@ namespace UXDivers.Artina.Grial
 		{
 		}
 
-		//UserItem UserSelected;
-
 		public MessageViewModel (UserItem U)
 		{
 			//UserSelected = U;
 			InterlocutorId = U.Id;
 			Email = U.Email;
+
 
 			UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
 			CurrentUserEmail = CurrentUser.Email;
@@ -27,25 +26,22 @@ namespace UXDivers.Artina.Grial
 
 			//Messages = DBMessage.GetItems () as List<MessageItem>;
 			//Messages = DBMessage.GetItems (currentUserId) as List<MessageItem>;
-			Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+			Messages = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
 		}
 
 		List<MessageItem> messages;
-
 		public List<MessageItem> Messages {
 			get{ return messages; }
 			set{ SetProperty (ref messages, value); }
 		}
 
 		int interlocutorId;
-
 		public int InterlocutorId {
 			get{ return interlocutorId; }
 			set{ SetProperty (ref interlocutorId, value); }
 		}
 
 		string email;
-
 		public string Email {
 			get{ return email; }
 			set{ SetProperty (ref email, value); }
@@ -58,28 +54,24 @@ namespace UXDivers.Artina.Grial
 		}
 
 		int currentUserId;
-
 		public int CurrentUserId {
 			get{ return currentUserId; }
 			set{ SetProperty (ref currentUserId, value); }
 		}
 
 		string currentUserEmail;
-
 		public string CurrentUserEmail {
 			get{ return currentUserEmail; }
 			set{ SetProperty (ref currentUserEmail, value); }
 		}
 
 		string contentText;
-
 		public string ContentText {
 			get{ return contentText; }
 			set{ SetProperty (ref contentText, value); }
 		}
 
 		string contentTranslate;
-
 		public string ContentTranslate {
 			get{ return contentTranslate; }
 			set{ SetProperty (ref contentTranslate, value); }
@@ -87,7 +79,6 @@ namespace UXDivers.Artina.Grial
 
 
 		string idSender;
-
 		public string IdSender {
 			get{ return idSender; }
 			set{ SetProperty (ref idSender, value); }
@@ -95,14 +86,12 @@ namespace UXDivers.Artina.Grial
 
 
 		string idRecipient;
-
 		public string IdRecipient {
 			get{ return idRecipient; }
 			set{ SetProperty (ref idRecipient, value); }
 		}
 
 		string createDate;
-
 		public string CreateDate {
 			get{ return createDate; }
 			set{ SetProperty (ref createDate, value); }
@@ -124,13 +113,10 @@ namespace UXDivers.Artina.Grial
 					DBMessage.SaveItemToDB (Msg);
 
 					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
-
-
 				});
-
 			}
-
 		}
+
 
 	}
 }

@@ -1,33 +1,19 @@
-﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/ViewModel/LoginViewModel.cs">
+﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
+  <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.7e131882" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="packages/Xam.Plugin.Media.2.3.0/readme.txt">
     <Files>
-      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="97" Column="47" />
       <File FileName="Grial/Views/Messages/MessagesList.xaml" Line="1" Column="1" />
       <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="1" Column="1" />
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="60" Column="6" />
-      <File FileName="Grial/ViewModel/LoginViewModel.cs" Line="40" Column="21" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="60" Column="5" />
+      <File FileName="Grial/ViewModel/LoginViewModel.cs" Line="21" Column="42" />
+      <File FileName="packages/Xam.Plugin.Media.2.3.0/readme.txt" Line="29" Column="22" />
+      <File FileName="Grial/Views/MenuPage.xaml" Line="18" Column="31" />
+      <File FileName="Grial/Views/MenuPage.xaml.cs" Line="7" Column="1" />
+      <File FileName="Grial/ViewModel/MenuViewModel.cs" Line="26" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Grial" expanded="True">
-            <Node name="Grial" expanded="True">
-              <Node name="ViewModel" expanded="True">
-                <Node name="LoginViewModel.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Messages" expanded="True">
-                  <Node name="ChatMessagesList.xaml" expanded="True" />
-                </Node>
-                <Node name="LoginPage.xaml" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/Messages/ChatMessagesList.xaml.cs" line="24" column="1" />
@@ -38,4 +24,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Grial.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
 </Properties>

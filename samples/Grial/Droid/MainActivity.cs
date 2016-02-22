@@ -14,7 +14,7 @@ using Xamarin.Forms;
 namespace UXDivers.Artina.Grial
 {
 	[Activity (
-		Label = "Artina Grial",
+		Label = "Connect People",
 		Theme = "@style/AppTheme",
 		Icon="@android:color/transparent",
 		MainLauncher = false)

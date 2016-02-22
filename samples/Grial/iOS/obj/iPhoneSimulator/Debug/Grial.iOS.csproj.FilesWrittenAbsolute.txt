@@ -51,3 +51,5 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/SQLitePCL.raw.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/UXDivers.Artina.Grial.dll.mdb
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.Abstractions.dll

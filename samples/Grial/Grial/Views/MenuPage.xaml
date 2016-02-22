@@ -15,6 +15,9 @@
 				<StackLayout Orientation="Horizontal"
 					HorizontalOptions="CenterAndExpand"
 					VerticalOptions="CenterAndExpand">
+					
+					<Button x:Name="takePhoto" Text="Take Picture"/>
+					<Image x:Name="image"/>
 					<Button Text="LOGOUT"
 						Command="{Binding LogoutCommand}" />
 				</StackLayout>

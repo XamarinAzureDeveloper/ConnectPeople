@@ -44,6 +44,10 @@
 	-r \
 	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/sqlite-net-pcl.1.1.1/lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll" \
 	-r \
+	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/Xam.Plugin.Media.2.3.0/lib/Xamarin.iOS10/Plugin.Media.dll" \
+	-r \
+	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/Xam.Plugin.Media.2.3.0/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll" \
+	-r \
 	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/SQLitePCL.raw.0.8.6/build/Xamarin.iOS10/pinvoke_sqlite3/anycpu/SQLitePCL.raw.dll" \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
@@ -299,6 +303,10 @@
 	"/Users/abdel/Projects/GitHub/App ConnectPeople/lib/ios-unified/UXDivers.Artina.Shared.iOS.dll" \
 	-r \
 	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/sqlite-net-pcl.1.1.1/lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll" \
+	-r \
+	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/Xam.Plugin.Media.2.3.0/lib/Xamarin.iOS10/Plugin.Media.dll" \
+	-r \
+	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/Xam.Plugin.Media.2.3.0/lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll" \
 	-r \
 	"/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/packages/SQLitePCL.raw.0.8.6/build/Xamarin.iOS10/pinvoke_sqlite3/anycpu/SQLitePCL.raw.dll" \
 	-r \

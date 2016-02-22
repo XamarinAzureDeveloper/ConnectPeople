@@ -17,6 +17,11 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/UXDivers.Artina.Shared.Droid.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/SQLite-net.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Plugin.CurrentActivity.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Plugin.Permissions.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Plugin.Permissions.Abstractions.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Plugin.Media.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/Plugin.Media.Abstractions.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/SQLitePCL.raw.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/UXDivers.Artina.Grial.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Droid/obj/Debug/android/assets/mscorlib.dll

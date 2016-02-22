@@ -143,3 +143,5 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/SQLitePCL.raw.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/SQLite-net.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Plugin.Media.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Plugin.Media.Abstractions.dll

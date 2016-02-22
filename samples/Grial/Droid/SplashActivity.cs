@@ -17,7 +17,7 @@ namespace UXDivers.Artina.Grial
 	using Android.OS;
 
 	[Activity(
-		Label = "Artina Grial",
+		Label = "Connect People",
 		Theme = "@style/Theme.Splash", 
 		Icon = "@drawable/icon", 
 		MainLauncher = true, 

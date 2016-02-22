@@ -8,6 +8,7 @@ namespace UXDivers.Artina.Grial
 	{
 		public MenuViewModel ()
 		{
+			
 		}
 
 		public ICommand LogoutCommand 

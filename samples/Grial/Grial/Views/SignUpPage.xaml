@@ -11,11 +11,22 @@
 
 	<StackLayout>
 
-		<StackLayout Orientation="Horizontal">
+		<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 					<commonViews:BrandBlock 
-					HorizontalOptions="Start"
+					HorizontalOptions="StartAndExpand"
 					VerticalOptions="Center"
 					/>
+					<!-- CLOSE ICON -->
+					<Label 
+					Style="{DynamicResource IconCloseLabelStyle}" 
+					HorizontalOptions="End"
+					VerticalOptions="Start"
+					TranslationX="-20"
+					TranslationY="20">
+					<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="NavigateBack" />
+					</Label.GestureRecognizers>
+					</Label>
 		</StackLayout>
 
 		<StackLayout

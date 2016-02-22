@@ -13,9 +13,6 @@ namespace UXDivers.Artina.Grial
 		public ChatMessagesList ()
 		{
 			InitializeComponent ();
-			//ScrollviewChat.ScrollY = 
-			//ScrollView.YProperty 
-
 		}
 
 		protected override void OnBindingContextChanged ()
@@ -29,12 +26,10 @@ namespace UXDivers.Artina.Grial
 
 			msg = viewModel.Messages;
 
-
 			viewModel.PropertyChanged += (sender, e) => {
 
 				if (e.PropertyName == "Messages") {
 
-					//OnBindingContextChanged ();
 					SetupChat (viewModel.Messages);
 
 				}
@@ -42,7 +37,6 @@ namespace UXDivers.Artina.Grial
 			};
 
 			SetupChat (viewModel.Messages);
-
 		}
 
 		public void SetupChat (List<MessageItem> messages)
@@ -54,9 +48,8 @@ namespace UXDivers.Artina.Grial
 
 				foreach (var message in messages) {
 						widget = CompareId (message);
-						ChatMessagesListView.Children.Add (widget);
 						widget.BindingContext = message;
-					
+						ChatMessagesListView.Children.Add (widget);
 				}
 			} else { 
 				
@@ -65,6 +58,7 @@ namespace UXDivers.Artina.Grial
 				widget.BindingContext = message;
 				ChatMessagesListView.Children.Add (widget);
 			}
+			ScrollviewChat.ScrollToAsync (ChatMessagesListView, ScrollToPosition.End, true);
 
 		}
 
@@ -76,9 +70,6 @@ namespace UXDivers.Artina.Grial
 				return new ChatRightMessageItemTemplate ();
 			}
 		}
-
-
-
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
 		{

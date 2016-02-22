@@ -27,6 +27,7 @@ namespace UXDivers.Artina.Grial
 			//Messages = DBMessage.GetItems () as List<MessageItem>;
 			//Messages = DBMessage.GetItems (currentUserId) as List<MessageItem>;
 			Messages = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
+
 		}
 
 		List<MessageItem> messages;
@@ -99,7 +100,7 @@ namespace UXDivers.Artina.Grial
 
 		public ICommand SaveItem {
 			get {
-				return new Command ( async (M) => {
+				return new Command ( (M) => {
 					var Msg = new MessageItem {
 
 						ContentText = ContentText,
@@ -113,6 +114,8 @@ namespace UXDivers.Artina.Grial
 					DBMessage.SaveItemToDB (Msg);
 
 					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+
+
 				});
 			}
 		}

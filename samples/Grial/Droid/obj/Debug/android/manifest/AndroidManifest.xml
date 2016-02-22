@@ -3,9 +3,9 @@
   <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="21" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:icon="@drawable/icon" android:label="Grial UIkit" android:largeHeap="@bool/largeheap" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@android:color/transparent" android:label="Artina Grial" android:theme="@style/AppTheme" android:name="md5a1e47f5eeaf1e4ce9f77850c96c77c26.MainActivity" />
-    <activity android:icon="@drawable/icon" android:label="Artina Grial" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5a1e47f5eeaf1e4ce9f77850c96c77c26.SplashActivity">
+  <application android:icon="@drawable/icon" android:label="Grial UIkit" android:largeHeap="@bool/largeheap" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:icon="@android:color/transparent" android:label="Artina Grial" android:theme="@style/AppTheme" android:name="md5f08109f04c89b77a2a7ec4821eb5dad9.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="Artina Grial" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5f08109f04c89b77a2a7ec4821eb5dad9.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -65,6 +65,12 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref language, value); }
 		}
 
+		string picture;
+		public string Picture {
+			get { return picture; }
+			set { SetProperty (ref picture, value); }
+		}
+
 		UserItem selectedItem;
 		public UserItem SelectedItem {
 			get { return selectedItem; } 

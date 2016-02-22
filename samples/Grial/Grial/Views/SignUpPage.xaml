@@ -24,10 +24,25 @@
 					TranslationX="-20"
 					TranslationY="20">
 					<Label.GestureRecognizers>
-						<TapGestureRecognizer Tapped="NavigateBack" />
+						<TapGestureRecognizer Command="{Binding NavigateBack}" />
 					</Label.GestureRecognizers>
 					</Label>
 		</StackLayout>
+
+			<StackLayout>
+				<artina:CircleImage 
+					x:Name="avatar"
+					Source="{Binding Picture}" 
+					HeightRequest="100"
+					WidthRequest="100"
+					Rotation="270"
+						>						
+					<artina:CircleImage.GestureRecognizers>
+						<TapGestureRecognizer Command="{Binding TakePicture}" />
+					</artina:CircleImage.GestureRecognizers>
+				</artina:CircleImage>
+			</StackLayout>
+
 
 		<StackLayout
 					VerticalOptions="StartAndExpand" Padding="20" >

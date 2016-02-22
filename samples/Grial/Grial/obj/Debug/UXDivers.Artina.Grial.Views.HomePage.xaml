@@ -26,7 +26,7 @@
 						<ViewCell>
 						<StackLayout Orientation="Horizontal"
 							HorizontalOptions="FillAndExpand" Padding="5">
-							<artina:CircleImage Source="{ StaticResource ThemeAvatarSample1Image }"
+							<artina:CircleImage Source="{Binding Picture}" 
 								Style="{ StaticResource Avatar }" />
 							<StackLayout Orientation="Vertical" >
 								<Label Text="{Binding Name}" />

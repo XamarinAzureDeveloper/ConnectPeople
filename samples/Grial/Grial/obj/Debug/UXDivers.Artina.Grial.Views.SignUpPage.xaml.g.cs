@@ -17,8 +17,12 @@ namespace UXDivers.Artina.Grial {
     public partial class SignUpPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::UXDivers.Artina.Shared.CircleImage avatar;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(SignUpPage));
+            avatar = this.FindByName <global::UXDivers.Artina.Shared.CircleImage>("avatar");
         }
     }
 }

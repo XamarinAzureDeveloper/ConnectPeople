@@ -16,28 +16,28 @@
 				Placeholder="Search for a name"
 				HorizontalOptions="FillAndExpand" />
 			<ListView x:Name="themeNamesSampleListView"
-				ItemsSource="{Binding Users}" 
+				ItemsSource="{Binding Users}"
 				SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-				SeparatorColor="{StaticResource ListViewSeparatorColor}"
-
-				>
+				SeparatorColor="{StaticResource ListViewSeparatorColor}">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-						<StackLayout Orientation="Horizontal"
-							HorizontalOptions="FillAndExpand" Padding="5">
-							<artina:CircleImage Source="{ StaticResource ThemeAvatarSample1Image }"
-								Style="{ StaticResource Avatar }" />
-							<StackLayout Orientation="Vertical" >
-								<Label Text="{Binding Name}" />
-								<Label Text="{Binding Function}" />
+							<StackLayout Orientation="Horizontal"
+								HorizontalOptions="FillAndExpand"
+								Padding="5">
+								<artina:CircleImage Source="{Binding Picture}"
+									Style="{ StaticResource Avatar }"
+									Rotation="270" />
+								<StackLayout Orientation="Vertical">
+									<Label Text="{Binding Name}" />
+									<Label Text="{Binding Function}" />
+								</StackLayout>
+								<StackLayout Orientation="Vertical"
+									HorizontalOptions="End">
+									<Label Text="{Binding FirstName}" />
+									<Label Text="{Binding Language}" />
+								</StackLayout>
 							</StackLayout>
-							<StackLayout Orientation="Vertical" HorizontalOptions="End" >
-								<Label Text="{Binding FirstName}" />
-								<Label Text="{Binding Language}" />
-							</StackLayout>
-						</StackLayout>
-					
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>

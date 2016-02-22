@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UXDivers.Artina.Grial
 {
+	[Xamarin.Forms.Xaml.XamlCompilation(Xamarin.Forms.Xaml.XamlCompilationOptions.Skip)]
 	public partial class SignUpPage : ContentPage
 	{
 		public SignUpPage ()
@@ -22,6 +23,7 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateBackDelegate = NavigateBack;
 		}
+
 		public async Task<bool> NavigateBack ()
 		{
 			await Navigation.PopAsync ();

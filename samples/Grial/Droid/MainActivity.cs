@@ -17,6 +17,7 @@ namespace UXDivers.Artina.Grial
 		Label = "Connect People",
 		Theme = "@style/AppTheme",
 		Icon="@android:color/transparent",
+		ScreenOrientation = ScreenOrientation.Portrait,
 		MainLauncher = false)
 	]
 	public class MainActivity : FormsApplicationActivity

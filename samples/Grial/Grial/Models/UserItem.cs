@@ -25,11 +25,14 @@ namespace UXDivers.Artina.Grial
 		//		[MaxLength(50), Column("Email")]
 		public string Email { get; set; }
 
-		//		[MaxLength(50), Column("Email")]
+		//		[MaxLength(50), Column("Password")]
 		public string Password { get; set; }
 
-		//		[MaxLength(50), Column("Email")]
+		//		[MaxLength(50), Column("Language")]
 		public string Language { get; set; }
+
+		//		[MaxLength(50), Column("Language")]
+		public string Picture { get; set; }
 
 	}
 }

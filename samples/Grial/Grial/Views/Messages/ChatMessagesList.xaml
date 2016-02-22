@@ -17,7 +17,7 @@
 				<Button HorizontalOptions="Start"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
 					Text="Trans" />
-				<Entry HorizontalOptions="FillAndExpand"
+				<Entry x:Name="EntryWrite" HorizontalOptions="FillAndExpand"
 					Placeholder="Write ..."
 					Text="{Binding ContentText}" 
 					/>

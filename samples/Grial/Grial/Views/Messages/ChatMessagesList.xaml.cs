@@ -58,6 +58,9 @@ namespace UXDivers.Artina.Grial
 				widget.BindingContext = message;
 				ChatMessagesListView.Children.Add (widget);
 			}
+
+			EntryWrite.Text = "";
+
 			ScrollviewChat.ScrollToAsync (ChatMessagesListView, ScrollToPosition.End, true);
 
 		}

@@ -85,7 +85,6 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref idSender, value); }
 		}
 
-
 		string idRecipient;
 		public string IdRecipient {
 			get{ return idRecipient; }
@@ -114,6 +113,7 @@ namespace UXDivers.Artina.Grial
 					DBMessage.SaveItemToDB (Msg);
 
 					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+
 
 
 				});

@@ -1,27 +1,126 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="UXDivers.Artina.Grial.MenuPage">
+	x:Class="UXDivers.Artina.Grial.MenuPage"
+
+		xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
+	Title="Sign Up"
+		>
 	<ContentPage.Content>
+		
+
 		<ScrollView>
-			<StackLayout VerticalOptions="FillAndExpand">
-				<StackLayout BackgroundColor="White"
-					Orientation="Horizontal"
-					HorizontalOptions="CenterAndExpand"
-					VerticalOptions="CenterAndExpand">
-					<Image Source="LGS.png"
-						Aspect="AspectFit" />
-				</StackLayout>
-				<StackLayout Orientation="Horizontal"
-					HorizontalOptions="CenterAndExpand"
-					VerticalOptions="CenterAndExpand">
-					
-					<Button x:Name="takePhoto" Text="Take Picture"/>
-					<Image x:Name="image"/>
-					<Button Text="LOGOUT"
-						Command="{Binding LogoutCommand}" />
-				</StackLayout>
+
+		<StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+						<commonViews:BrandBlock 
+						HorizontalOptions="StartAndExpand"
+						VerticalOptions="Center"
+						/>
+						<!-- CLOSE ICON -->
+						<Label 
+						Style="{DynamicResource IconCloseLabelStyle}" 
+						HorizontalOptions="End"
+						VerticalOptions="Start"
+						TranslationX="-20"
+						TranslationY="20">
+						<Label.GestureRecognizers>
+							<TapGestureRecognizer Command="{Binding NavigateBack}" />
+						</Label.GestureRecognizers>
+						</Label>
 			</StackLayout>
-		</ScrollView>
+
+			<StackLayout>
+				<artina:CircleImage 
+					x:Name="avatar"
+					Source="{Binding Picture}" 
+					HeightRequest="100"
+					WidthRequest="100"
+					Rotation="270"
+						>						
+					<artina:CircleImage.GestureRecognizers>
+						<TapGestureRecognizer Command="{Binding TakePicture}" />
+					</artina:CircleImage.GestureRecognizers>
+				</artina:CircleImage>
+			</StackLayout>
+
+
+			<StackLayout
+						VerticalOptions="StartAndExpand" Padding="20" >
+						<!---EMAIL FIELD--> 
+						<Entry
+							Placeholder="Name"
+							Text= "{Binding Name}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+
+						<Entry
+							Placeholder="FirstName"
+							Text= "{Binding FirstName}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+
+						<Entry
+							Placeholder="NickName"
+							Text= "{Binding NickName}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+
+						<Entry
+							Placeholder="Function"
+							Text= "{Binding Function}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+
+						<Entry
+							Placeholder="Language"
+							Text= "{Binding Language}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+						
+						<Entry
+							Placeholder="E-mail"
+							Text= "{Binding Email}"
+							Style="{DynamicResource ArtinaLoginEntryStyle}" HeightRequest="40"/>
+
+						<Label
+							HorizontalOptions="Start"
+							Text=" Please enter a valid e-mail " IsVisible="false"
+							Style="{DynamicResource ValidationEntryErrorStyle}"
+							/>
+						<Entry 
+							Placeholder="Password"
+							Text= "{Binding Password}"
+							IsPassword="true"
+							Style="{DynamicResource ArtinaLoginEntryStyle}"	HeightRequest="45" />
+
+					</StackLayout>
+					<!-- FOOTER -->
+					<StackLayout 
+						HorizontalOptions="Fill"
+						VerticalOptions="EndAndExpand" 
+						Padding="20">
+
+						<Button
+							Style="{DynamicResource PrimaryActionButtonStyle}"
+							VerticalOptions="End"
+							Text="Save"
+							Command="{Binding SaveItem}" />
+
+						<Button
+							Style="{DynamicResource PrimaryActionButtonStyle}"
+							VerticalOptions="End"
+							Text="Save"
+							Command="{Binding LogoutCommand}" />
+					</StackLayout>
+
+	</StackLayout>
+
+	</ScrollView>
+
+
+
+
+
+
+		
 	</ContentPage.Content>
 </ContentPage>

@@ -60,9 +60,6 @@ namespace UXDivers.Artina.Grial
 		}
 
 
-
-
-
 		public ICommand SaveItem {
 			get {
 				return new Command (async () => {

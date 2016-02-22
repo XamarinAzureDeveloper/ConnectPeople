@@ -17,16 +17,12 @@ namespace UXDivers.Artina.Grial {
     public partial class MenuPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button takePhoto;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image image;
+        private global::UXDivers.Artina.Shared.CircleImage avatar;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MenuPage));
-            takePhoto = this.FindByName <global::Xamarin.Forms.Button>("takePhoto");
-            image = this.FindByName <global::Xamarin.Forms.Image>("image");
+            avatar = this.FindByName <global::UXDivers.Artina.Shared.CircleImage>("avatar");
         }
     }
 }

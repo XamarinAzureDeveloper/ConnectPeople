@@ -6,9 +6,9 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:icon="@drawable/icon" android:label="Grial UIkit" android:largeHeap="@bool/largeheap" android:name="md539e99d0dac6acc20f2bb92a00cb4843e.MainApplication" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@android:color/transparent" android:label="Connect People" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md539e99d0dac6acc20f2bb92a00cb4843e.MainActivity" />
-    <activity android:icon="@drawable/icon" android:label="Connect People" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md539e99d0dac6acc20f2bb92a00cb4843e.SplashActivity">
+  <application android:icon="@drawable/icon" android:label="Grial UIkit" android:largeHeap="@bool/largeheap" android:name="md599822a41a95e59be4d72c94bc15c9d2d.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <activity android:icon="@android:color/transparent" android:label="Connect People" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md599822a41a95e59be4d72c94bc15c9d2d.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="Connect People" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md599822a41a95e59be4d72c94bc15c9d2d.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

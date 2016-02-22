@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
   <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.7e131882" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/SignUpPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/MenuPage.xaml.cs">
     <Files>
-      <File FileName="Grial/ViewModel/SignUpViewModel.cs" Line="64" Column="1" />
-      <File FileName="Grial/Views/SignUpPage.xaml" Line="7" Column="53" />
+      <File FileName="Grial/Views/SignUpPage.xaml" Line="6" Column="1" />
+      <File FileName="Grial/Views/MenuPage.xaml" Line="25" Column="53" />
+      <File FileName="Grial/Views/MenuPage.xaml.cs" Line="14" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

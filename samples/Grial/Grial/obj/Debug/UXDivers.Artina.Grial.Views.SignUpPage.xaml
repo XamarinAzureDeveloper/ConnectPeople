@@ -36,7 +36,7 @@
 					HeightRequest="100"
 					WidthRequest="100"
 					Rotation="270"
-						>						Rotation="90"
+						>						
 					<artina:CircleImage.GestureRecognizers>
 						<TapGestureRecognizer Command="{Binding TakePicture}" />
 					</artina:CircleImage.GestureRecognizers>

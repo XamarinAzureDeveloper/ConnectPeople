@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace UXDivers.Artina.Grial
 {
@@ -32,10 +33,24 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png", Command = viewModel.NavigateCommand });
+			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command = hideShowSearch });
 
 		}
 
+
+	
+
+		public ICommand hideShowSearch {
+			get {
+				return new Command ( (M) => {
+					if (StackSearch.IsVisible == true) {
+						StackSearch.IsEnabled = false;
+					} else {
+						StackSearch.IsEnabled = true;
+					};
+				});
+			}
+		}
 
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
@@ -44,7 +59,6 @@ namespace UXDivers.Artina.Grial
 			//Navigation.RemovePage (this);
 			return true;
 		}
-
 
 		public async Task<bool> NavigateBack ()
 		{

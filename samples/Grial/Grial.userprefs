@@ -1,5 +1,5 @@
-﻿<Properties StartupItem="iOS/Grial.iOS.csproj">
-  <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.MyNexus5" />
+﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
+  <MonoDevelop.Ide.ItemProperties.Grial.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Grial/ViewModel/MenuViewModel.cs">
     <Files>
       <File FileName="Grial/Views/MenuPage.xaml" Line="118" Column="31" />
@@ -18,5 +18,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Grial.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.MyNexus5" />
 </Properties>

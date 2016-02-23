@@ -9,13 +9,24 @@ namespace UXDivers.Artina.Grial
 	public class HomeViewModel : ViewModel
 	{
 		UserItemDatabase DBUser = new UserItemDatabase ();
-		MessageItemDatabase DBMsg = new MessageItemDatabase ();
+		//MessageItemDatabase DBMessage = new MessageItemDatabase ();
 
 		public HomeViewModel ()
 		{
 			Users = DBUser.GetItems ((int)((UserItem) Application.Current.Properties["User"]).Id);
+
+			//UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
+			//CurrentUserId = CurrentUser.Id;
+
+			//Users = (DBMessage.GetItems (CurrentUserId)) as List<UserItem>;
+
 		}
 
+		int currentUserId;
+		public int CurrentUserId {
+			get{ return currentUserId; }
+			set{ SetProperty (ref currentUserId, value); }
+		}
 
 		IEnumerable <UserItem> users;
 		public IEnumerable <UserItem> Users 
@@ -91,10 +102,27 @@ namespace UXDivers.Artina.Grial
 
 
 
+		string search;
+		public string Search {
+			get { return search; }
+			set { SetProperty (ref search, value); }
+		}
+
+
+		public ICommand SearchItem {
+			get {
+				return new Command ( (M) => {
+					Users = DBUser.SearchItems(Search);
+				});
+			}
+		}
+
+
 		public ICommand NavigateCommand {
 			get {
 				return new Command (async () => {
 					await NavigateToViewModel<HomeViewModel> ();
+
 				});
 			}
 		}

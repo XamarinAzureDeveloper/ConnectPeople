@@ -11,18 +11,33 @@
 		<StackLayout VerticalOptions="Fill"
 			Padding="20"
 			Spacing="10">
+
 			<!-- LIST AND SEARCHBAR -->
-			<SearchBar x:Name="themeNamesSearchBar"
-				Placeholder="Search for a name"
-				HorizontalOptions="FillAndExpand" />
+			<StackLayout x:Name="StackSearch" Orientation="Horizontal" HorizontalOptions="Fill" BackgroundColor="Gray" IsVisible="false" >
+
+				<Entry Text="{Binding Search}"
+					Placeholder="Search for a name"
+					Style="{DynamicResource ArtinaLoginEntryStyle}"
+					HorizontalOptions="FillAndExpand"
+					/>
+
+		<!--<SearchBar x:Name="themeNamesSearchBar"
+				Text="{Binding Search}"
+					Placeholder="Search for a name"
+					HorizontalOptions="FillAndExpand"/>-->
+
+
+				<Button HorizontalOptions="End"
+					Style="{DynamicResource PrimaryActionButtonStyle}"
+					Text="recherche"
+					Command="{Binding SearchItem}" />
+			</StackLayout>
+
+
 			<ListView x:Name="themeNamesSampleListView"
-
-			BackgroundColor="White"
-			HasUnevenRows = "true"
-			IsPullToRefreshEnabled ="true"
-			Refreshing="OnRefreshing"
-
-
+				HasUnevenRows = "true"
+				IsPullToRefreshEnabled ="true"
+				Refreshing="OnRefreshing"
 				SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 				SeparatorColor="{StaticResource ListViewSeparatorColor}"
 

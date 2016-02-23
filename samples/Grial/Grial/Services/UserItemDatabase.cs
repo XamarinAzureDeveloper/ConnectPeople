@@ -14,6 +14,7 @@ namespace UXDivers.Artina.Grial
 		{
 			database = DependencyService.Get<ISQLite> ().GetConnection ();
 			database.CreateTable<UserItem> ();
+			//database.CreateTable<MessageItem> ();
 		}
 
 		public int SaveItemToDB (UserItem User)
@@ -42,10 +43,35 @@ namespace UXDivers.Artina.Grial
 			return database.Table<UserItem> ().FirstOrDefault (a => a.Email == email && a.Password == password);
 		}
 
-//		public IEnumerable<UserItem>  GetItems (int id, int idsender)
+
+
+
+		public IEnumerable<UserItem>  GetItems (int id, int idsender, int idRecever)
+		{
+			return database.Table<UserItem> ().Where (x => x.Id == idsender || x.Id == idRecever);
+		}
+
+		public IEnumerable<UserItem>  SearchItems (string search)
+		{
+			return database.Table<UserItem> ().Where (x => x.Name == search ||
+															x.FirstName == search||
+															x.NickName == search ||
+															x.Email == search).ToList();
+		}
+
+
+
+
+//		public IEnumerable<UserItem> GetItemsInMsg (int currentUserId)
 //		{
-//			return database.Table<UserItem> ().Where (x => x.Id != id );
+//			return (from i in database.Table<MessageItem>().Where (i => i.IdSender == currentUserId || i.IdRecipient == currentUserId)
+//				from U in database.Table<UserItem>().Where (u => u.Id == currentUserId)
+//				select i)?.ToList();
 //		}
+//
+//
+
+
 //
 //
 //

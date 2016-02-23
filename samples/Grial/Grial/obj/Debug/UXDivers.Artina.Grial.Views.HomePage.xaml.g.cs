@@ -17,7 +17,7 @@ namespace UXDivers.Artina.Grial {
     public partial class HomePage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.SearchBar themeNamesSearchBar;
+        private global::Xamarin.Forms.StackLayout StackSearch;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ListView themeNamesSampleListView;
@@ -25,7 +25,7 @@ namespace UXDivers.Artina.Grial {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(HomePage));
-            themeNamesSearchBar = this.FindByName <global::Xamarin.Forms.SearchBar>("themeNamesSearchBar");
+            StackSearch = this.FindByName <global::Xamarin.Forms.StackLayout>("StackSearch");
             themeNamesSampleListView = this.FindByName <global::Xamarin.Forms.ListView>("themeNamesSampleListView");
         }
     }

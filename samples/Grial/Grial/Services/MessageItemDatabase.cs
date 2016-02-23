@@ -43,6 +43,19 @@ namespace UXDivers.Artina.Grial
 
 		}
 
+
+
+		public IEnumerable<MessageItem> GetItems (int currentUserId)
+		{
+			var request = database.Table<MessageItem> ().Where (m => m.IdRecipient == currentUserId || m.IdSender == currentUserId).OrderBy(m => m.CreateDate).ToList();
+
+			return request;
+
+		}
+
+
+
+
 		//		public UserItem GetItem (string email, string password)
 		//		{
 		//			return database.Table<UserItem> ().FirstOrDefault (a => a.Email == email && a.Password == password);

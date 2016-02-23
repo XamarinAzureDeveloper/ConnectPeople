@@ -289,3 +289,4 @@ bin/Debug/com.artina.grial.uikit.msym/System.Runtime.Serialization.dll.mdb
 bin/Debug/com.artina.grial.uikit.msym/System.ServiceModel.Internals.dll.mdb
 bin/Debug/com.artina.grial.uikit.msym/System.Net.Http.dll.mdb
 bin/Debug/com.artina.grial.uikit.msym/System.ComponentModel.Composition.dll.mdb
+/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Droid/obj/Debug/res/drawable/iconpicture.png

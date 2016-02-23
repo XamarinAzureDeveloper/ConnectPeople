@@ -53,6 +53,9 @@ namespace UXDivers.Artina.Grial
 		}
 
 
+
+
+
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
 		{
 			await Navigation.PushAsync ((Page)ViewFactory.Create (tViewModel, () => (ViewModel)viewModelFactory ()));

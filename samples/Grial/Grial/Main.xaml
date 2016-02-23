@@ -441,14 +441,14 @@
 				<Setter Property="WidthRequest" Value="50" />
 				<Setter Property="HeightRequest" Value="50" />
 				<Setter Property="BorderThickness" Value="6"/>
-				<Setter Property="BorderColor" Value="{StaticResource AccentColor}"/>
+				<Setter Property="BorderColor" Value="{StaticResource InverseTextColor}"/>
 			</Style>
 
 				<Style x:Key="Avatar" TargetType="artina:CircleImage" >
 					<Setter Property="WidthRequest" Value="50" />
 					<Setter Property="HeightRequest" Value="50" />
 					<Setter Property="BorderThickness" Value="6"/>
-					<Setter Property="BorderColor" Value="{StaticResource AccentColor}"/>
+					<Setter Property="BorderColor" Value="{StaticResource InverseTextColor}"/>
 				</Style>
 
 				<Style x:Key="AvatarXSmall" TargetType="artina:CircleImage" BasedOn="{ StaticResource Avatar }">

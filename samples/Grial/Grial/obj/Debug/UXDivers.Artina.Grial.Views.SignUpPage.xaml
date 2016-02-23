@@ -6,7 +6,7 @@
 	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
 	xmlns:commonViews="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
 	BackgroundImage="{ StaticResource SignUpBackgroundImage }"
-	Title="Sign Up">
+	Title="Sign Up" >
 	<ScrollView>
 
 	<StackLayout>
@@ -32,10 +32,12 @@
 			<StackLayout>
 				<artina:CircleImage 
 					x:Name="avatar"
-					Source="{Binding Picture}" 
+					BorderThickness="10"
+					Source="{Binding Picture }" 
 					HeightRequest="100"
 					WidthRequest="100"
 					Rotation="270"
+
 						>						
 					<artina:CircleImage.GestureRecognizers>
 						<TapGestureRecognizer Command="{Binding TakePicture}" />

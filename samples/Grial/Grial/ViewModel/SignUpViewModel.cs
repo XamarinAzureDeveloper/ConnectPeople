@@ -9,6 +9,8 @@ namespace UXDivers.Artina.Grial
 	{
 		public SignUpViewModel ()
 		{
+			//Picture = "iconpicture.png";
+
 		}
 
 		string name;
@@ -100,7 +102,9 @@ namespace UXDivers.Artina.Grial
 						Name = "test.jpg"
 					});
 
-					if (file == null)
+					if (file == null){
+						Picture = "iconpicture.png";
+					}
 						return;
 
 					//DisplayAlert ("File Location", file.Path, "OK");

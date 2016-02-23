@@ -34,8 +34,12 @@
 							<ViewCell.ContextActions>
 								<MenuItem 
 									Clicked="OnMore"
-									Text="More" />
-								<MenuItem Clicked="OnDelete"
+									Text="Details" />
+								<MenuItem 
+									Clicked="OnMore"
+									Text="Add" />
+								<MenuItem 
+									Clicked="OnDelete"
 									Text="Delete" 
 									IsDestructive="True" />
 							</ViewCell.ContextActions>

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace UXDivers.Artina.Grial
 {
 	public class HomeViewModel : ViewModel
 	{
 		UserItemDatabase DBUser = new UserItemDatabase ();
+		MessageItemDatabase DBMsg = new MessageItemDatabase ();
 
 		public HomeViewModel ()
 		{
@@ -86,6 +88,27 @@ namespace UXDivers.Artina.Grial
 				}));
 			} 
 		}
+
+
+
+		public ICommand NavigateCommand {
+			get {
+				return new Command (async () => {
+					await NavigateToViewModel<HomeViewModel> ();
+				});
+			}
+		}
+
+		public ICommand NavigateBackCommand {
+			get {
+				return new Command (async () => {
+					await NavigateBack ();
+				});
+			}
+		}
+
+
+
 	}
 }
 

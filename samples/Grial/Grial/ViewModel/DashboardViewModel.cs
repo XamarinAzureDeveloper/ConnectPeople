@@ -2,7 +2,7 @@
 
 namespace UXDivers.Artina.Grial
 {
-	public class DashboardViewModel
+	public class DashboardViewModel : ViewModel
 	{
 		public List<SampleCategory> Items { 
 			get 

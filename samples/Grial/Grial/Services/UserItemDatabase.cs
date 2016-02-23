@@ -34,13 +34,23 @@ namespace UXDivers.Artina.Grial
 
 		public IEnumerable<UserItem>  GetItems (int id)
 		{
-			return database.Table<UserItem> ().Where (x => x.Id != id);
+			return database.Table<UserItem> ().Where (x => x.Id != id );
 		}
 
 		public UserItem GetItem (string email, string password)
 		{
 			return database.Table<UserItem> ().FirstOrDefault (a => a.Email == email && a.Password == password);
 		}
+
+//		public IEnumerable<UserItem>  GetItems (int id, int idsender)
+//		{
+//			return database.Table<UserItem> ().Where (x => x.Id != id );
+//		}
+//
+//
+//
+//		Messages = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
+
 
 //		public UserItem GetItem (int id)
 //		{

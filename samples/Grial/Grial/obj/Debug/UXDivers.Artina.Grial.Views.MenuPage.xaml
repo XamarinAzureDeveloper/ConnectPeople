@@ -108,8 +108,14 @@
 						<Button
 							Style="{DynamicResource PrimaryActionButtonStyle}"
 							VerticalOptions="End"
-							Text="Save"
+							Text="Logout"
 							Command="{Binding LogoutCommand}" />
+
+						<Button
+							Style="{DynamicResource PrimaryActionButtonStyle}"
+							VerticalOptions="End"
+							Text="Theme"
+							Command="{Binding Theme}" />
 					</StackLayout>
 
 	</StackLayout>

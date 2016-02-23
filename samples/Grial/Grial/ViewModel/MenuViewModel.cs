@@ -18,8 +18,16 @@ namespace UXDivers.Artina.Grial
 				Title = "Login"
 			};
 		}); } }
+			
 
+		public ICommand Theme 
+		{ get { return new Command (() => { 
 
+			Application.Current.MainPage = new NavigationPage (ViewFactory.Create<DashboardViewModel> () as Page) {
+				Title = "Theme"
+				};
+			
+		}); } }
 	}
 }
 

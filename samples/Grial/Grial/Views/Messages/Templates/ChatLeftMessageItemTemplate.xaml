@@ -53,7 +53,7 @@
 		<!-- LEFT AVATAR -->
 		<artina:CircleImage 
 			Grid.Row="1" Grid.Column="0"
-			Source="{ Binding From.Avatar }"
+			Source="{ Binding Picture }"
 			Style="{ StaticResource AvatarXSmall }"
 			HorizontalOptions="Start" 
 			TranslationY="10"
@@ -68,7 +68,7 @@
 			TranslationY="10"
 			FontSize ="12"
 			TextColor="#FF212121"
-			Text="{ Binding From.Name }" 
+			Text="{ Binding NickName }" 
 		/>
 
 		<!-- WHEN -->

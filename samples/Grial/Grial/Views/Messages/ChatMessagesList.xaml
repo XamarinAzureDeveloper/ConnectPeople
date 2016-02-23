@@ -4,7 +4,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="UXDivers.Artina.Grial.ChatMessagesList"
 	xmlns:views="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
-	Title="{Binding FirstName}">
+	Title="{Binding NickName}">
 	<StackLayout
 		VerticalOptions="FillAndExpand">
 		<ScrollView x:Name="ScrollviewChat" Orientation = "Vertical" VerticalOptions="StartAndExpand" >

@@ -10,7 +10,6 @@ namespace UXDivers.Artina.Grial
 		public SignUpViewModel ()
 		{
 			//Picture = "iconpicture.png";
-
 		}
 
 		string name;
@@ -61,6 +60,14 @@ namespace UXDivers.Artina.Grial
 			set { SetProperty (ref picture, value); }
 		}
 
+		public ICommand NavigateBackCommand {
+			get {
+				return new Command (async () => {
+					await NavigateBack ();
+				});
+			}
+		}
+
 
 		public ICommand SaveItem {
 			get {
@@ -104,13 +111,12 @@ namespace UXDivers.Artina.Grial
 
 					if (file == null){
 						Picture = "iconpicture.png";
-					}
 						return;
+					}
 
 					//DisplayAlert ("File Location", file.Path, "OK");
 
 					Picture = file.Path;
-
 				});
 
 			}

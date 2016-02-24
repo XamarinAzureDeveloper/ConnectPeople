@@ -17,10 +17,18 @@ public class MonoPackageManager {
 	static Object lock = new Object ();
 	static boolean initialized;
 
+	static android.content.Context Context;
+
 	public static void LoadApplication (Context context, ApplicationInfo runtimePackage, String[] apks)
 	{
 		synchronized (lock) {
 			if (!initialized) {
+				android.content.IntentFilter timezoneChangedFilter  = new android.content.IntentFilter (
+						android.content.Intent.ACTION_TIMEZONE_CHANGED
+				);
+				context.registerReceiver (new mono.android.app.NotifyTimeZoneChanges (), timezoneChangedFilter);
+				Context = context;
+				
 				System.loadLibrary("monodroid");
 				Locale locale       = Locale.getDefault ();
 				String language     = locale.getLanguage () + "-" + locale.getCountry ();
@@ -44,6 +52,9 @@ public class MonoPackageManager {
 							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
 						MonoPackageManager_Resources.Assemblies,
 						context.getPackageName ());
+				
+				mono.android.app.ApplicationRegistration.registerApplications ();
+				
 				initialized = true;
 			}
 		}
@@ -79,7 +90,9 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
+		/* We need to ensure that "UXDivers.Artinal.Grial.Droid.dll" comes first in this list. */
 		"UXDivers.Artinal.Grial.Droid.dll",
+		"Java.Interop.dll",
 		"UXDivers.Artina.Shared.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
@@ -100,56 +113,28 @@ class MonoPackageManager_Resources {
 		"Plugin.Media.Abstractions.dll",
 		"SQLitePCL.raw.dll",
 		"UXDivers.Artina.Grial.dll",
-		"System.Collections.Concurrent.dll",
-		"System.Collections.dll",
-		"System.ComponentModel.Annotations.dll",
-		"System.ComponentModel.EventBasedAsync.dll",
-		"System.ComponentModel.dll",
-		"System.Diagnostics.Contracts.dll",
-		"System.Diagnostics.Debug.dll",
-		"System.Diagnostics.Tools.dll",
-		"System.Diagnostics.Tracing.dll",
-		"System.Dynamic.Runtime.dll",
-		"System.Globalization.dll",
-		"System.IO.dll",
-		"System.Linq.Expressions.dll",
-		"System.Linq.Parallel.dll",
-		"System.Linq.Queryable.dll",
-		"System.Linq.dll",
-		"System.Net.NetworkInformation.dll",
-		"System.Net.Primitives.dll",
-		"System.Net.Requests.dll",
-		"System.ObjectModel.dll",
-		"System.Reflection.Emit.ILGeneration.dll",
-		"System.Reflection.Emit.Lightweight.dll",
-		"System.Reflection.Emit.dll",
-		"System.Reflection.Extensions.dll",
-		"System.Reflection.Primitives.dll",
-		"System.Reflection.dll",
-		"System.Resources.ResourceManager.dll",
-		"System.Runtime.Extensions.dll",
-		"System.Runtime.InteropServices.WindowsRuntime.dll",
-		"System.Runtime.InteropServices.dll",
-		"System.Runtime.Numerics.dll",
-		"System.Runtime.Serialization.Json.dll",
-		"System.Runtime.Serialization.Primitives.dll",
-		"System.Runtime.Serialization.Xml.dll",
-		"System.Runtime.dll",
-		"System.Security.Principal.dll",
-		"System.ServiceModel.Http.dll",
-		"System.ServiceModel.Primitives.dll",
-		"System.ServiceModel.Security.dll",
-		"System.Text.Encoding.Extensions.dll",
-		"System.Text.Encoding.dll",
-		"System.Text.RegularExpressions.dll",
-		"System.Threading.Tasks.Parallel.dll",
-		"System.Threading.Tasks.dll",
-		"System.Threading.Timer.dll",
-		"System.Threading.dll",
-		"System.Xml.ReaderWriter.dll",
-		"System.Xml.XDocument.dll",
-		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
+		"System.Threading.dll",
+		"System.Runtime.dll",
+		"System.Collections.dll",
+		"System.Collections.Concurrent.dll",
+		"System.Diagnostics.Debug.dll",
+		"System.Reflection.dll",
+		"System.Linq.dll",
+		"System.Runtime.InteropServices.dll",
+		"System.Runtime.Extensions.dll",
+		"System.Reflection.Extensions.dll",
+		"System.Threading.Tasks.dll",
+		"System.Text.RegularExpressions.dll",
+		"System.Linq.Expressions.dll",
+		"System.ObjectModel.dll",
+		"System.Globalization.dll",
+		"System.ComponentModel.dll",
+		"System.Xml.ReaderWriter.dll",
+		"System.Dynamic.Runtime.dll",
+		"System.IO.dll",
+		"System.Resources.ResourceManager.dll",
+		"System.Diagnostics.Tools.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

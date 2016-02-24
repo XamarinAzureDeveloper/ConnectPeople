@@ -71,7 +71,7 @@
 			TranslationY="10"
 			FontSize ="12"
 			TextColor="#FF212121"
-			Text="{ Binding CreateDate }" 
+			Text="{ Binding NickName }" 
 		/>
 
 		<!-- BY -->

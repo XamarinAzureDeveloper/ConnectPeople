@@ -33,7 +33,7 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command = hideShowSearch });
+			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowSearch });
 
 		}
 
@@ -42,11 +42,11 @@ namespace UXDivers.Artina.Grial
 
 		public ICommand hideShowSearch {
 			get {
-				return new Command ( (M) => {
+				return new Command ( () => {
 					if (StackSearch.IsVisible == true) {
-						StackSearch.IsEnabled = false;
+						StackSearch.IsVisible = false;
 					} else {
-						StackSearch.IsEnabled = true;
+						StackSearch.IsVisible = true;
 					};
 				});
 			}

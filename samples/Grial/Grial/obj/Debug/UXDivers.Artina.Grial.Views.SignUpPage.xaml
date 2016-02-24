@@ -24,7 +24,7 @@
 					TranslationX="-20"
 					TranslationY="20">
 					<Label.GestureRecognizers>
-						<TapGestureRecognizer Command="{Binding NavigateBack}" />
+						<TapGestureRecognizer Command="{Binding NavigateBackCommand}" />
 					</Label.GestureRecognizers>
 					</Label>
 		</StackLayout>

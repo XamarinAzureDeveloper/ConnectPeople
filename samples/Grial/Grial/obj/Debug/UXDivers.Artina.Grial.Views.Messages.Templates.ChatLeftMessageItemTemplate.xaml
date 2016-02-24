@@ -47,13 +47,19 @@
 				FontSize="14"
 				Text="{ Binding ContentText }" 
 			/>
+
+			<Label IsVisible="true"
+				TextColor="Red"
+				FontSize="14"
+				Text="{ Binding ContentTranslate }" 
+			/>
 		</StackLayout>
 
 
 		<!-- LEFT AVATAR -->
 		<artina:CircleImage 
 			Grid.Row="1" Grid.Column="0"
-			Source="{ Binding Picture }"
+			Source="{ Binding CurrentUserPicture }"
 			Style="{ StaticResource AvatarXSmall }"
 			HorizontalOptions="Start" 
 			TranslationY="10"
@@ -68,7 +74,8 @@
 			TranslationY="10"
 			FontSize ="12"
 			TextColor="#FF212121"
-			Text="{ Binding NickName }" 
+				
+			Text="{ Binding CurrentUserNickName }" 
 		/>
 
 		<!-- WHEN -->

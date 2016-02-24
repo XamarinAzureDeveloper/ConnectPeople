@@ -13,11 +13,11 @@
 			Spacing="10">
 
 			<!-- LIST AND SEARCHBAR -->
-			<StackLayout x:Name="StackSearch" Orientation="Horizontal" HorizontalOptions="Fill" BackgroundColor="Gray" IsVisible="false" >
+			<StackLayout x:Name="StackSearch" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#F5F5F5" IsVisible="false" Padding="5" >
 
 				<Entry Text="{Binding Search}"
 					Placeholder="Search for a name"
-					Style="{DynamicResource ArtinaLoginEntryStyle}"
+						TextColor="Gray"
 					HorizontalOptions="FillAndExpand"
 					/>
 
@@ -65,15 +65,23 @@
 								<artina:CircleImage Source="{Binding Picture}"
 									Style="{ StaticResource Avatar }"
 									Rotation="270" />
-								<StackLayout Orientation="Vertical">
-									<Label Text="{Binding Id}" />
-									<Label Text="{Binding Name}" />
-									<Label Text="{Binding Function}" />
+								<StackLayout Orientation="Vertical"
+										HorizontalOptions="StartAndExpand">
+
+									<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+										<Label Text="{Binding NickName}" FontSize="Large" />
+									</StackLayout>
+									
+									<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+										<Label Text="{Binding FirstName}" FontAttributes="Italic" />
+										<Label Text="{Binding Name}" FontAttributes="Italic" />
+									</StackLayout>
+
 								</StackLayout>
 								<StackLayout Orientation="Vertical"
 									HorizontalOptions="End">
-									<Label Text="{Binding FirstName}" />
-									<Label Text="{Binding Language}" />
+									<Label Text="{Binding Function}" FontSize="Small" />
+									<Label Text="{Binding Language}" FontSize="Small"/>
 								</StackLayout>
 							</StackLayout>
 						</ViewCell>

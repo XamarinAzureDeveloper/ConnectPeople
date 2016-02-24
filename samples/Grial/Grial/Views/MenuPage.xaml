@@ -15,30 +15,14 @@
 
 		<StackLayout>
 
-			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-						<commonViews:BrandBlock 
-						HorizontalOptions="StartAndExpand"
-						VerticalOptions="Center"
-						/>
-						<!-- CLOSE ICON -->
-						<Label 
-						Style="{DynamicResource IconCloseLabelStyle}" 
-						HorizontalOptions="End"
-						VerticalOptions="Start"
-						TranslationX="-20"
-						TranslationY="20">
-						<Label.GestureRecognizers>
-							<TapGestureRecognizer Command="{Binding NavigateBack}" />
-						</Label.GestureRecognizers>
-						</Label>
-			</StackLayout>
+
 
 			<StackLayout>
 				<artina:CircleImage 
 					x:Name="avatar"
 					Source="{Binding Picture}" 
-					HeightRequest="100"
-					WidthRequest="100"
+					HeightRequest="130"
+					WidthRequest="130"
 					Rotation="270"
 						>						
 					<artina:CircleImage.GestureRecognizers>

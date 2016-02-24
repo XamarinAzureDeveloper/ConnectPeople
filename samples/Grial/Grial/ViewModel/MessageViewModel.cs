@@ -214,6 +214,18 @@ namespace UXDivers.Artina.Grial
 			}
 		}
 
+		public ICommand Translate {
+			get {
+				return new Command ( () => {
+					
+					TranslateService traduire = new TranslateService();
+					traduire.TranslateAsync();
+
+				});
+			}
+		}
+
+
 
 	}
 }

@@ -16,7 +16,8 @@
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
 				<Button HorizontalOptions="Start"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
-					Text="Trans" />
+					Text="Trans"
+					Command="{Binding Translate}" />
 				<Entry x:Name="EntryWrite" HorizontalOptions="FillAndExpand"
 					Placeholder="Write ..."
 					Text="{Binding ContentText}" 

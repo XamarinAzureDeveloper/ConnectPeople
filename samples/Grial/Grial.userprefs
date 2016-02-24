@@ -1,19 +1,38 @@
 ﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
-  <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.7e131882" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/ViewModel/MessageViewModel.cs">
+  <MonoDevelop.Ide.ItemProperties.Grial.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Services/TranslateService.cs">
     <Files>
-      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml.cs" Line="93" Column="1" />
-      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="200" Column="23" />
-      <File FileName="Grial/Views/Messages/Templates/ChatRightMessageItemTemplate.xaml" Line="31" Column="22" />
-      <File FileName="Grial/Views/Messages/Templates/ChatLeftMessageItemTemplate.xaml" Line="51" Column="27" NotebookId="1" />
+      <File FileName="Grial/Services/TranslateService.cs" Line="33" Column="1" />
+      <File FileName="Grial/Views/Messages/ChatMessagesList.xaml" Line="20" Column="33" />
+      <File FileName="Grial/ViewModel/MessageViewModel.cs" Line="225" Column="5" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Grial" expanded="True">
+            <Node name="Grial" expanded="True">
+              <Node name="Packages" expanded="True">
+                <Node name="Newtonsoft.Json" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.7e131882" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/Abdel/GitHubProject/Xamarin Project/ConnectPeople/samples/Grial/Grial/Views/HomePage.xaml.cs" line="45" column="1" />
+      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Services/TraslateService.cs" line="46" column="1" />
+      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Services/TranslateService.cs" line="46" column="1" />
+      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Services/TranslateService.cs" line="22" column="1" />
+      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Services/TranslateService.cs" line="18" column="1" />
+      <Breakpoint file="/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/Services/TranslateService.cs" line="33" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Grial.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.7e131882" />
 </Properties>

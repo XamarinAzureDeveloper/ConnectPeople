@@ -145,3 +145,7 @@
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/SQLite-net.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Plugin.Media.dll
 /Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Plugin.Media.Abstractions.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/System.Net.Http.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/System.Net.Http.Primitives.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/System.Net.Http.Extensions.dll
+/Users/abdel/Projects/GitHub/App ConnectPeople/samples/Grial/Grial/bin/Debug/Newtonsoft.Json.dll

@@ -216,10 +216,24 @@ namespace UXDivers.Artina.Grial
 
 		public ICommand Translate {
 			get {
-				return new Command ( () => {
+				return new Command ( async (T) => {
 					
 					TranslateService traduire = new TranslateService();
-					traduire.TranslateAsync();
+					ContentTranslate = await traduire.TranslateAsync(ContentText);
+
+					var Msg = new MessageItem {
+
+						ContentText = ContentText,
+						ContentTranslate = ContentTranslate,
+						IdSender = CurrentUserId,
+						IdRecipient = InterlocutorId,
+						CreateDate = DateTime.Now.ToString (),
+					};
+
+					DBMessage.SaveItemToDB (Msg);
+
+					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+
 
 				});
 			}

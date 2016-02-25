@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace UXDivers.Artina.Grial
 {
@@ -13,40 +14,36 @@ namespace UXDivers.Artina.Grial
 		}
 
 
-		public async Task<string> TranslateAsync ()
+		public async Task<string> TranslateAsync (string ContentText)
 		{
-			string uri = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=fr&dt=t&q=money";
+			string ContentTranslate;
 
-
-
-			string uri2 = "https://www.googleapis.com/language/translate/v2?q=bateau&target=en&format=text&fields=translations";
+			string uri = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=fr&dt=t&q=" + ContentText;
+			//string uri2 = "https://www.googleapis.com/language/translate/v2?q=bateau&target=en&format=text&fields=translations";
 
 			var client = new HttpClient ();
-
 			HttpResponseMessage response = await client.GetAsync (uri);
 
 			if (response.IsSuccessStatusCode) {
 				using (var ms = new MemoryStream ()) 
 				{
-					response.Content.CopyToAsync (ms);
-					
-				Debug.WriteLine (ms);
+					await response.Content.CopyToAsync (ms);
+					ms.Position = 0;
+
+					var fileTranslate = new StreamReader (ms);
+					var fileReadConvert = fileTranslate.ReadToEnd ();
+					string[] substrings = fileReadConvert.Split('"');
+					foreach (string match in substrings)
+					{
+						Debug.WriteLine("'{0}'", match);
+					}
+					ContentTranslate = substrings [1];
+					return ContentTranslate;
+
 				}
 
-
-//				string text = System.IO.File.ReadAllText(response.Content);
-//				string text1 = System.IO.StringReader(response.Content);
-//				string text2 = System.IO.StreamReader(response);
-//				string text3 = System.IO.TextReader(response);
-//
-//
-//
-//				string text6 = Debug.WriteLine("{0}", response);
-
-				return response.Content.ToString ();
-
 			}
-			return uri;
+			return "false";
 		}
 
 

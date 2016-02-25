@@ -203,13 +203,8 @@ namespace UXDivers.Artina.Grial
 						CreateDate = DateTime.Now.ToString (),
 					};
 
-					//var DB = new MessageItemDatabase ();
 					DBMessage.SaveItemToDB (Msg);
-
 					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
-
-
-
 				});
 			}
 		}
@@ -231,7 +226,6 @@ namespace UXDivers.Artina.Grial
 					};
 
 					DBMessage.SaveItemToDB (Msg);
-
 					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
 
 

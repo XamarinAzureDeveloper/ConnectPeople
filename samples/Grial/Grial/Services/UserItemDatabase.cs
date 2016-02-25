@@ -51,25 +51,44 @@ namespace UXDivers.Artina.Grial
 			return database.Table<UserItem> ().Where (x => x.Id == idsender || x.Id == idRecever);
 		}
 
-		public IEnumerable<UserItem>  SearchItems (string search)
+
+		public IEnumerable<MessageItem> GetMsg (int currentUserId, int InterlocutorId)
 		{
-			return database.Table<UserItem> ().Where (x => x.Name == search ||
-															x.FirstName == search||
-															x.NickName == search ||
-															x.Email == search).ToList();
+			var request = database.Table<MessageItem> ().Where (m => m.IdRecipient == currentUserId && m.IdSender == InterlocutorId 
+				|| m.IdRecipient == InterlocutorId && m.IdSender == currentUserId).OrderBy(m => m.CreateDate).ToList();
+
+			return request;
+
 		}
-
-
 
 
 //		public IEnumerable<UserItem> GetItemsInMsg (int currentUserId)
 //		{
 //			return (from i in database.Table<MessageItem>().Where (i => i.IdSender == currentUserId || i.IdRecipient == currentUserId)
-//				from U in database.Table<UserItem>().Where (u => u.Id == currentUserId)
-//				select i)?.ToList();
+//				select i)?.ToList().Distinct(m=> m.i);
 //		}
-//
-//
+
+
+//		public void Compare (int id, int idsender, int idRecever)
+//		{
+//			var result = from U in UserItem join M in MessageItem on 
+//				((U.Id == M.idsender) equals U.Id ) || 
+//				((U.Id == M.idRecever)  equals U.id) select U);
+//		}
+
+
+
+
+
+
+		public IEnumerable<UserItem>  SearchItems (string search)
+		{
+			return database.Table<UserItem> ().Where (x => x.Name == search ||
+				x.FirstName == search||
+				x.NickName == search ||
+				x.Email == search).ToList();
+		}
+
 
 
 //

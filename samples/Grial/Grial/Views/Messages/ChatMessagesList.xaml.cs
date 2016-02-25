@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace UXDivers.Artina.Grial
 {
@@ -23,33 +24,35 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
+			ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowTranslateMsg });
 
 			msg = viewModel.Messages;
-
 			viewModel.PropertyChanged += (sender, e) => {
-
 				if (e.PropertyName == "Messages") {
-
 					SetupChat (viewModel.Messages);
-
 				}
-
 			};
 
 			SetupChat (viewModel.Messages);
 		}
 
+		public ICommand hideShowTranslateMsg {
+			get {
+				return new Command (() => {
+					MessagingCenter.Send<Application> (Application.Current, "hideShowTranslate");
+				});
+			}
+		}
+
 		public void SetupChat (List<MessageItem> messages)
 		{
-			//User FirstUser = SampleData.ChatMessagesList[0].From;
 			View widget;
-
 			if (msg == messages) {
 
 				foreach (var message in messages) {
-						widget = CompareId (message);
-						widget.BindingContext = message;
-						ChatMessagesListView.Children.Add (widget);
+					widget = CompareId (message);
+					widget.BindingContext = message;
+					ChatMessagesListView.Children.Add (widget);
 				}
 			} else { 
 				
@@ -58,11 +61,8 @@ namespace UXDivers.Artina.Grial
 				widget.BindingContext = message;
 				ChatMessagesListView.Children.Add (widget);
 			}
-
 			EntryWrite.Text = "";
-
 			ScrollviewChat.ScrollToAsync (ChatMessagesListView, ScrollToPosition.End, true);
-
 		}
 
 		public View CompareId (MessageItem message)
@@ -77,7 +77,6 @@ namespace UXDivers.Artina.Grial
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
 		{
 			await Navigation.PushAsync ((Page)ViewFactory.Create (tViewModel, () => (ViewModel)viewModelFactory ()));
-			//Navigation.RemovePage (this);
 			return true;
 		}
 

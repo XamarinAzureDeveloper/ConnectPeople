@@ -14,17 +14,6 @@ namespace UXDivers.Artina.Grial
 			InitializeComponent ();
 		}
 
-//		protected override void OnBindingContextChanged ()
-//		{
-//			base.OnBindingContextChanged ();
-//			var viewModel = BindingContext as ViewModel;
-//			if (viewModel == null)
-//				return;
-//			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
-//
-//		}
-
-
 		protected override void OnBindingContextChanged ()
 		{
 			base.OnBindingContextChanged ();
@@ -33,28 +22,21 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowSearch });
-
+			this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command = hideShowSearch });
 		}
-
-
-	
 
 		public ICommand hideShowSearch {
 			get {
-				return new Command ( () => {
+				return new Command (() => {
 					if (StackSearch.IsVisible == true) {
 						StackSearch.IsVisible = false;
 					} else {
 						StackSearch.IsVisible = true;
-					};
+					}
+					;
 				});
 			}
 		}
-
-
-
-
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
 		{
@@ -70,27 +52,32 @@ namespace UXDivers.Artina.Grial
 		}
 
 
-		public void OnMore (object sender, EventArgs e) {
+		public void OnMore (object sender, EventArgs e)
+		{
 			var mi = ((MenuItem)sender);
-			DisplayAlert("More Context Action", mi.CommandParameter + " more context action", "OK");
+			DisplayAlert ("More Context Action", mi.CommandParameter + " more context action", "OK");
 		}
 
-		public void OnDelete (object sender, EventArgs e) {
+		public void OnDelete (object sender, EventArgs e)
+		{
 			var mi = ((MenuItem)sender);
-			DisplayAlert("Delete Context Action", mi.CommandParameter + " delete context action", "OK");
+			DisplayAlert ("Delete Context Action", mi.CommandParameter + " delete context action", "OK");
 		}
 
-		public void OnRefreshing (object sender, EventArgs e) {
+		public void OnRefreshing (object sender, EventArgs e)
+		{
 			var listView = (sender as ListView);
-			listView.EndRefresh();
+			listView.EndRefresh ();
 		}
 
-		public void animateIn( View uiElement ){
+		public void animateIn (View uiElement)
+		{
 			animateItem (uiElement, 10500);
 		}
 
-		private void animateItem( View uiElement, uint duration ){
-			uiElement.RotateYTo(99, duration, Easing.SinInOut);
+		private void animateItem (View uiElement, uint duration)
+		{
+			uiElement.RotateYTo (99, duration, Easing.SinInOut);
 		}
 
 	}

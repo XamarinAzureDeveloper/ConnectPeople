@@ -48,8 +48,8 @@
 				Text="{ Binding ContentText }" 
 			/>
 
-			<Label IsVisible="true"
-				TextColor="Red"
+			<Label x:Name="labelTranslate" IsVisible="true"
+				TextColor="#FF212121"
 				FontSize="14"
 				Text="{ Binding ContentTranslate }" 
 			/>

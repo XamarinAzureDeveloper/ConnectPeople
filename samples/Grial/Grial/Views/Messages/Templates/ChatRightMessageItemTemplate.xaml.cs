@@ -10,6 +10,9 @@ namespace UXDivers.Artina.Grial
 		public ChatRightMessageItemTemplate ()
 		{
 			InitializeComponent ();
+			MessagingCenter.Subscribe<Application> (Application.Current, "hideShowTranslate", async (sender) => {
+				await ShowLabelTranslate ();
+			});
 		}
 
 		protected override void OnBindingContextChanged ()
@@ -36,6 +39,14 @@ namespace UXDivers.Artina.Grial
 			return true;
 		}
 
+		async Task ShowLabelTranslate ()
+		{
+			if (labelTranslate.IsVisible == true) {
+				labelTranslate.IsVisible = false;
+			} else {
+				labelTranslate.IsVisible = true;
+			};
+		}
 	}
 }
 

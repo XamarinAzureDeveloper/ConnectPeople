@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace UXDivers.Artina.Grial
 {
@@ -10,6 +11,9 @@ namespace UXDivers.Artina.Grial
 		public ChatLeftMessageItemTemplate ()
 		{
 			InitializeComponent ();
+			MessagingCenter.Subscribe<Application> (Application.Current, "hideShowTranslate", async (sender) => {
+				await ShowLabelTranslate ();
+			});
 		}
 
 		protected override void OnBindingContextChanged ()
@@ -20,7 +24,6 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			//this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowSearch });
 		}
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)
@@ -36,6 +39,14 @@ namespace UXDivers.Artina.Grial
 			return true;
 		}
 
+		async Task ShowLabelTranslate ()
+		{
+			if (labelTranslate.IsVisible == true) {
+				labelTranslate.IsVisible = false;
+			} else {
+				labelTranslate.IsVisible = true;
+			};
+		}
 	}
 }
 

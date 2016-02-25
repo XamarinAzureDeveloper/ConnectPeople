@@ -47,7 +47,12 @@
 				TextColor="#FFFFFF"
 				FontSize="14"
 				Text="{ Binding ContentText }" 
+			/>
 
+			<Label x:Name="labelTranslate" BackgroundColor="White" IsVisible="true"
+				TextColor="#FF212121"
+				FontSize="14"
+				Text="{ Binding ContentTranslate }" 
 			/>
 		</StackLayout>
 

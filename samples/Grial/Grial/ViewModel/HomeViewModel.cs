@@ -9,16 +9,16 @@ namespace UXDivers.Artina.Grial
 	public class HomeViewModel : ViewModel
 	{
 		UserItemDatabase DBUser = new UserItemDatabase ();
-		//MessageItemDatabase DBMessage = new MessageItemDatabase ();
+		MessageItemDatabase DBMessage = new MessageItemDatabase ();
 
 		public HomeViewModel ()
 		{
 			Users = DBUser.GetItems ((int)((UserItem) Application.Current.Properties["User"]).Id);
-
+			UsersMessage = (DBMessage.GetItems (CurrentUserId)) as List<UserItem>;
+			//DBUser.Compare (users, UsersMessage);
 			//UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
 			//CurrentUserId = CurrentUser.Id;
 
-			//Users = (DBMessage.GetItems (CurrentUserId)) as List<UserItem>;
 
 		}
 
@@ -33,6 +33,13 @@ namespace UXDivers.Artina.Grial
 		{
 			get{ return users; }
 			set{ SetProperty (ref users, value); }
+		}
+
+		IEnumerable <UserItem> usersMessage;
+		public IEnumerable <UserItem> UsersMessage 
+		{
+			get{ return usersMessage; }
+			set{ SetProperty (ref usersMessage, value); }
 		}
 
 		int id;

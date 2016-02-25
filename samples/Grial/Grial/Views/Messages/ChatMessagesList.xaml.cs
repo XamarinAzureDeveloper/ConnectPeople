@@ -9,7 +9,7 @@ namespace UXDivers.Artina.Grial
 {
 	public partial class ChatMessagesList : ContentPage
 	{
-		List<MessageItem> msg;
+		List<MessageItemViewModel> msg;
 
 		public ChatMessagesList ()
 		{
@@ -24,7 +24,7 @@ namespace UXDivers.Artina.Grial
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowTranslateMsg });
+			ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command = hideShowTranslateMsg });
 
 			msg = viewModel.Messages;
 			viewModel.PropertyChanged += (sender, e) => {
@@ -36,15 +36,7 @@ namespace UXDivers.Artina.Grial
 			SetupChat (viewModel.Messages);
 		}
 
-		public ICommand hideShowTranslateMsg {
-			get {
-				return new Command (() => {
-					MessagingCenter.Send<Application> (Application.Current, "hideShowTranslate");
-				});
-			}
-		}
-
-		public void SetupChat (List<MessageItem> messages)
+		public void SetupChat (List<MessageItemViewModel> messages)
 		{
 			View widget;
 			if (msg == messages) {
@@ -65,7 +57,7 @@ namespace UXDivers.Artina.Grial
 			ScrollviewChat.ScrollToAsync (ChatMessagesListView, ScrollToPosition.End, true);
 		}
 
-		public View CompareId (MessageItem message)
+		public View CompareId (MessageItemViewModel message)
 		{
 			if (message.IdSender == (int)((UserItem)Application.Current.Properties ["User"]).Id) {
 				return new ChatLeftMessageItemTemplate ();
@@ -86,6 +78,13 @@ namespace UXDivers.Artina.Grial
 			return true;
 		}
 
+		public ICommand hideShowTranslateMsg {
+			get {
+				return new Command (() => {
+					MessagingCenter.Send<Application> (Application.Current, "hideShowTranslate");
+				});
+			}
+		}
 	}
 }
 

@@ -23,6 +23,10 @@ namespace UXDivers.Artina.Grial
 			ViewFactory.Register<SignUpPage, SignUpViewModel> ();
 			ViewFactory.Register<ChatMessagesList, MessageViewModel> ();
 
+
+			ViewFactory.Register<ChatLeftMessageItemTemplate, MessageLeftViewModel> ();
+			ViewFactory.Register<ChatRightMessageItemTemplate, MessageRightViewModel> ();
+
 			ViewFactory.Register<Dashboard, DashboardViewModel> ();
 
 		}

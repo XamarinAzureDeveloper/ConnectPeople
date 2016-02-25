@@ -18,12 +18,11 @@ namespace UXDivers.Artina.Grial
 		protected override void OnBindingContextChanged ()
 		{
 			base.OnBindingContextChanged ();
-			var viewModel = BindingContext as MessageViewModel;
+			var viewModel = BindingContext as MessageRightViewModel;
 			if (viewModel == null)
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;
 			viewModel.NavigateBackDelegate = NavigateBack;
-			//this.ToolbarItems.Add (new ToolbarItem () { Icon = "logo.png",  Command =  hideShowSearch });
 		}
 
 		async Task<bool> NavigateToViewModel (Type tViewModel, Func<object> viewModelFactory)

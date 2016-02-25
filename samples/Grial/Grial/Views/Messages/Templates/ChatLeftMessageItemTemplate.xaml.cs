@@ -19,7 +19,7 @@ namespace UXDivers.Artina.Grial
 		protected override void OnBindingContextChanged ()
 		{
 			base.OnBindingContextChanged ();
-			var viewModel = BindingContext as MessageViewModel;
+			var viewModel = BindingContext as MessageLeftViewModel;
 			if (viewModel == null)
 				return;
 			viewModel.NavigateToViewModelDelegate = NavigateToViewModel;

@@ -74,7 +74,6 @@
 			TranslationY="10"
 			FontSize ="12"
 			TextColor="#FF212121"
-				
 			Text="{ Binding CurrentUserNickName }" 
 		/>
 

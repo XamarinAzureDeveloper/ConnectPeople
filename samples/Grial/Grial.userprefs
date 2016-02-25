@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Droid/Grial.Droid.csproj">
+﻿<Properties StartupItem="Droid/Grial.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.ItemProperties.Grial.Droid PreferredExecutionTarget="Android.7e131882" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/HomePage.xaml.cs">
     <Files>

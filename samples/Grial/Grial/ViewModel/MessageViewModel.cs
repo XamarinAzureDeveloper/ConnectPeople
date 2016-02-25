@@ -17,33 +17,28 @@ namespace UXDivers.Artina.Grial
 		{
 			//UserSelected = U;
 			InterlocutorId = U.Id;
-			Name = U.Name;
-			FirstName = U.FirstName;
-			NickName = U.NickName;
-			Function = U.Function;
-			Email = U.Email;
-			Language = U.Language;
-			Picture = U.Picture;
 
 			UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
-
 			CurrentUserId = CurrentUser.Id;
-			CurrentUserName = CurrentUser.Name;
-			CurrentUserFirstName = CurrentUser.FirstName;
-			CurrentUserNickName = CurrentUser.NickName;
-			CurrentUserFunction = CurrentUser.Function;
-			CurrentUserEmail = CurrentUser.Email;
-			CurrentUserLanguage = CurrentUserLanguage;
-			CurrentUserPicture = CurrentUser.Picture;
-
-
 			//Messages = DBMessage.GetItems () as List<MessageItem>;
 			//Messages = DBMessage.GetItems (currentUserId) as List<MessageItem>;
-			Messages = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
+
+			InitMessages ();
 
 		}
 
+		void InitMessages ()
+		{
+			var messageitems = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
+			foreach (var messageItem in messageitems) {
+				if (messageItem.IdSender == CurrentUserId)
+				{ 	Messages.Add (new MessageLeftViewModel (messageItem));
+				} else {
+					Messages.Add (new MessageRightViewModel (messageItem));
+				}
 
+			}
+		}
 
 		//PROP INTERLOCUTOR (PERSONNE AVEC QUI JE VEUT DISCUTER)
 		int interlocutorId;
@@ -51,50 +46,6 @@ namespace UXDivers.Artina.Grial
 			get{ return interlocutorId; }
 			set{ SetProperty (ref interlocutorId, value); }
 		}
-
-		string name;
-		public string Name {
-			get{ return name; }
-			set{ SetProperty (ref name, value); }
-		}
-
-		string firstName;
-		public string FirstName {
-			get{ return firstName; }
-			set{ SetProperty (ref firstName, value); }
-		}
-
-		string nickName;
-		public string NickName {
-			get{ return nickName; }
-			set{ SetProperty (ref nickName, value); }
-		}
-
-		string function;
-		public string Function {
-			get{ return function; }
-			set{ SetProperty (ref function, value); }
-		}
-
-		string email;
-		public string Email {
-			get{ return email; }
-			set{ SetProperty (ref email, value); }
-		}
-
-		string language;
-		public string Language {
-			get{ return language; }
-			set{ SetProperty (ref language, value); }
-		}
-
-		string picture;
-		public string Picture {
-			get { return picture; }
-			set { SetProperty (ref picture, value); }
-		}
-
-
 
 		//PROP CURRENT USER (USER LOGUER SUR APPLICATION)
 
@@ -104,54 +55,11 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref currentUserId, value); }
 		}
 
-		string currentUserName;
-		public string CurrentUserName {
-			get{ return currentUserName; }
-			set{ SetProperty (ref currentUserName, value); }
-		}
-
-		string currentUserFirstName;
-		public string CurrentUserFirstName {
-			get{ return currentUserFirstName; }
-			set{ SetProperty (ref currentUserFirstName, value); }
-		}
-
-		string currentUserNickName;
-		public string CurrentUserNickName {
-			get{ return currentUserNickName; }
-			set{ SetProperty (ref currentUserNickName, value); }
-		}
-
-		string CurrentUserFunction;
-		public string currentUserFunction {
-			get{ return CurrentUserFunction; }
-			set{ SetProperty (ref CurrentUserFunction, value); }
-		}
-
-
-		string currentUserEmail;
-		public string CurrentUserEmail {
-			get{ return currentUserEmail; }
-			set{ SetProperty (ref currentUserEmail, value); }
-		}
-
-		string currentUserLanguage;
-		public string CurrentUserLanguage {
-			get{ return currentUserLanguage; }
-			set{ SetProperty (ref currentUserLanguage, value); }
-		}
-
-		string currentUserPicture;
-		public string CurrentUserPicture {
-			get { return currentUserPicture; }
-			set { SetProperty (ref currentUserPicture, value); }
-		}
-
 
 		//PROP MESSAGE
-
-		List<MessageItem> messages;
-		public List<MessageItem> Messages {
+	
+		List<MessageItemViewModel> messages = new List<MessageItemViewModel>();
+		public List<MessageItemViewModel> Messages {
 			get{ return messages; }
 			set{ SetProperty (ref messages, value); }
 		}
@@ -204,7 +112,8 @@ namespace UXDivers.Artina.Grial
 					};
 
 					DBMessage.SaveItemToDB (Msg);
-					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+					InitMessages();
+					//Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
 				});
 			}
 		}
@@ -226,7 +135,10 @@ namespace UXDivers.Artina.Grial
 					};
 
 					DBMessage.SaveItemToDB (Msg);
-					Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
+
+					InitMessages();
+
+					//Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
 
 
 				});

@@ -19,7 +19,6 @@ namespace UXDivers.Artina.Grial
 			//UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
 			//CurrentUserId = CurrentUser.Id;
 
-
 		}
 
 		int currentUserId;
@@ -124,7 +123,14 @@ namespace UXDivers.Artina.Grial
 			}
 		}
 
-
+//		public ICommand DeleteItem {
+//			get {
+//				return new Command ( (M) => {
+//					Users = DBUser.DeleteItemFromDB(Search);
+//				});
+//			}
+//		}
+//
 		public ICommand NavigateCommand {
 			get {
 				return new Command (async () => {

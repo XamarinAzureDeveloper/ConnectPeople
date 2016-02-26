@@ -2,64 +2,71 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace UXDivers.Artina.Grial
 {
 	public class MessageViewModel : ViewModel
 	{
 		MessageItemDatabase DBMessage = new MessageItemDatabase ();
+		UserItemDatabase DBUser = new UserItemDatabase();
+
+		UserItem User;
 
 		public MessageViewModel ()
+
 		{
 		}
 
 		public MessageViewModel (UserItem U)
 		{
-			//UserSelected = U;
+			User = U;
 			InterlocutorId = U.Id;
+//			NickName = U.NickName;
+//			Picture = U.Picture;
 
 			UserItem CurrentUser = (UserItem)Application.Current.Properties ["User"];
 			CurrentUserId = CurrentUser.Id;
+
+
+			InitMessages (U);
+
 			//Messages = DBMessage.GetItems () as List<MessageItem>;
 			//Messages = DBMessage.GetItems (currentUserId) as List<MessageItem>;
 
-			InitMessages ();
-
 		}
 
-		void InitMessages ()
+		void InitMessages (UserItem U)
 		{
+			Messages = new ObservableCollection<MessageItemViewModel> ();
 			var messageitems = (DBMessage.GetItems (CurrentUserId, InterlocutorId)) as List<MessageItem>;
 			foreach (var messageItem in messageitems) {
-				if (messageItem.IdSender == CurrentUserId)
-				{ 	Messages.Add (new MessageLeftViewModel (messageItem));
+				if (messageItem.IdSender == CurrentUserId) {
+					Messages.Add (new MessageLeftViewModel (messageItem));
 				} else {
-					Messages.Add (new MessageRightViewModel (messageItem));
+					Messages.Add (new MessageRightViewModel (messageItem, U));
 				}
 
 			}
 		}
 
-		//PROP INTERLOCUTOR (PERSONNE AVEC QUI JE VEUT DISCUTER)
+//		//PROP INTERLOCUTOR (PERSONNE AVEC QUI JE VEUT DISCUTER)
 		int interlocutorId;
 		public int InterlocutorId {
 			get{ return interlocutorId; }
 			set{ SetProperty (ref interlocutorId, value); }
 		}
 
-		//PROP CURRENT USER (USER LOGUER SUR APPLICATION)
-
+//		//PROP CURRENT USER (USER LOGUER SUR APPLICATION)
 		int currentUserId;
 		public int CurrentUserId {
 			get{ return currentUserId; }
 			set{ SetProperty (ref currentUserId, value); }
 		}
 
-
 		//PROP MESSAGE
-	
-		List<MessageItemViewModel> messages = new List<MessageItemViewModel>();
-		public List<MessageItemViewModel> Messages {
+		ObservableCollection<MessageItemViewModel> messages;
+		public ObservableCollection<MessageItemViewModel> Messages {
 			get{ return messages; }
 			set{ SetProperty (ref messages, value); }
 		}
@@ -76,29 +83,6 @@ namespace UXDivers.Artina.Grial
 			set{ SetProperty (ref contentTranslate, value); }
 		}
 
-
-		string idSender;
-		public string IdSender {
-			get{ return idSender; }
-			set{ SetProperty (ref idSender, value); }
-		}
-
-		string idRecipient;
-		public string IdRecipient {
-			get{ return idRecipient; }
-			set{ SetProperty (ref idRecipient, value); }
-		}
-
-		string createDate;
-		public string CreateDate {
-			get{ return createDate; }
-			set{ SetProperty (ref createDate, value); }
-		}
-
-
-
-
-
 		public ICommand SaveItem {
 			get {
 				return new Command ( (M) => {
@@ -111,8 +95,9 @@ namespace UXDivers.Artina.Grial
 						CreateDate = DateTime.Now.ToString (),
 					};
 
+
 					DBMessage.SaveItemToDB (Msg);
-					InitMessages();
+					InitMessages(User);
 					//Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
 				});
 			}
@@ -135,8 +120,7 @@ namespace UXDivers.Artina.Grial
 					};
 
 					DBMessage.SaveItemToDB (Msg);
-
-					InitMessages();
+					InitMessages(User);
 
 					//Messages = (DBMessage.GetItems (currentUserId, InterlocutorId)) as List<MessageItem>;
 

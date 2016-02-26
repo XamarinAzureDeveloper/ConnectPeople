@@ -17,7 +17,7 @@
 
 
 
-			<StackLayout>
+			<StackLayout Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
 				<artina:CircleImage 
 					x:Name="avatar"
 					Source="{Binding Picture}" 
@@ -87,7 +87,7 @@
 							Style="{DynamicResource PrimaryActionButtonStyle}"
 							VerticalOptions="End"
 							Text="Save"
-							Command="{Binding SaveItem}" />
+							Command="{Binding UpdateItem}" />
 
 						<Button
 							Style="{DynamicResource PrimaryActionButtonStyle}"
@@ -95,11 +95,11 @@
 							Text="Logout"
 							Command="{Binding LogoutCommand}" />
 
-						<Button
+<!--						<Button
 							Style="{DynamicResource PrimaryActionButtonStyle}"
 							VerticalOptions="End"
 							Text="Theme"
-							Command="{Binding Theme}" />
+							Command="{Binding Theme}" />-->
 					</StackLayout>
 
 	</StackLayout>

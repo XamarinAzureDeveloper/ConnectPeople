@@ -37,6 +37,7 @@
 
 		<!-- BALLOON BACKGROUND -->
 		<StackLayout
+
 			BackgroundColor="{ StaticResource AccentColor }" 
 			Grid.Row="0" Grid.Column="1"
 			Padding="10"
@@ -48,7 +49,7 @@
 				Text="{ Binding ContentText }" 
 			/>
 
-			<Label x:Name="labelTranslate" IsVisible="true"
+			<Label x:Name="labelTranslate" BackgroundColor="White" IsVisible="false"
 				TextColor="#FF212121"
 				FontSize="14"
 				Text="{ Binding ContentTranslate }" 
@@ -63,7 +64,9 @@
 			Style="{ StaticResource AvatarXSmall }"
 			HorizontalOptions="Start" 
 			TranslationY="10"
+			Rotation="270"
 		/>
+
 
 		<!-- BY -->
 		<Label 

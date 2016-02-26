@@ -37,7 +37,7 @@ namespace UXDivers.Artina.Grial
 		public IEnumerable<MessageItem> GetItems (int currentUserId, int InterlocutorId)
 		{
 			var request = database.Table<MessageItem> ().Where (m => m.IdRecipient == currentUserId && m.IdSender == InterlocutorId 
-				|| m.IdRecipient == InterlocutorId && m.IdSender == currentUserId).OrderBy(m => m.CreateDate).ToList();
+				|| m.IdRecipient == InterlocutorId && m.IdSender == currentUserId).OrderBy(m => m.CreateDate).Take(10).ToList();
 
 			return request;
 

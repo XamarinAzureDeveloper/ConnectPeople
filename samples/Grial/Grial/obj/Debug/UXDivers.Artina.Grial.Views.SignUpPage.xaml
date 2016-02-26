@@ -29,7 +29,7 @@
 					</Label>
 		</StackLayout>
 
-			<StackLayout>
+			<StackLayout Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
 				<artina:CircleImage 
 					x:Name="avatar"
 					BorderThickness="10"

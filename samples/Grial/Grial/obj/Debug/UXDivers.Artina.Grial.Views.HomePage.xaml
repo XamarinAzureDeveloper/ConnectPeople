@@ -20,16 +20,9 @@
 						TextColor="Gray"
 					HorizontalOptions="FillAndExpand"
 					/>
-
-		<!--<SearchBar x:Name="themeNamesSearchBar"
-				Text="{Binding Search}"
-					Placeholder="Search for a name"
-					HorizontalOptions="FillAndExpand"/>-->
-
-
 				<Button HorizontalOptions="End"
 					Style="{DynamicResource PrimaryActionButtonStyle}"
-					Text="recherche"
+					Text="Search"
 					Command="{Binding SearchItem}" />
 			</StackLayout>
 

@@ -22,6 +22,12 @@ namespace UXDivers.Artina.Grial
 			return database.Insert (User);
 		}
 
+		public int UpdateItemToDB (UserItem User)
+		{
+			return database.Update (User);
+		}
+
+
 		public int DeleteItemFromDB (UserItem User)
 		{
 			return database.Delete (User);

@@ -4,14 +4,21 @@ namespace UXDivers.Artina.Grial
 {
 	public class MessageRightViewModel : MessageItemViewModel
 	{
-		public MessageRightViewModel (MessageItem m)
+
+
+		public MessageRightViewModel (MessageItem m, UserItem U)
 		{
 			ContentText = m.ContentText;
 			ContentTranslate = m.ContentTranslate;
 			IdSender = m.IdSender;
 			IdRecipient = m.IdRecipient;
 			CreateDate = m.CreateDate;
+
+			InterlocutorId = U.Id;
+			NickName = U.NickName;
+			Picture = U.Picture;
 		}
+
 
 		//PROP INTERLOCUTOR (PERSONNE AVEC QUI JE VEUT DISCUTER)
 		int interlocutorId;
@@ -31,38 +38,6 @@ namespace UXDivers.Artina.Grial
 			get { return picture; }
 			set { SetProperty (ref picture, value); }
 		}
-
-		//PROP MESSAGE
-		string contentText;
-		public string ContentText {
-			get{ return contentText; }
-			set{ SetProperty (ref contentText, value); }
-		}
-
-		string contentTranslate;
-		public string ContentTranslate {
-			get{ return contentTranslate; }
-			set{ SetProperty (ref contentTranslate, value); }
-		}
-
-		int idSender;
-		public int IdSender {
-			get{ return idSender; }
-			set{ SetProperty (ref idSender, value); }
-		}
-
-		int idRecipient;
-		public int IdRecipient {
-			get{ return idRecipient; }
-			set{ SetProperty (ref idRecipient, value); }
-		}
-
-		string createDate;
-		public string CreateDate {
-			get{ return createDate; }
-			set{ SetProperty (ref createDate, value); }
-		}
-
 	}
 }
 

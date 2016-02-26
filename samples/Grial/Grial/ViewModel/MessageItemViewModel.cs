@@ -4,21 +4,14 @@ using System.Collections.Generic;
 
 namespace UXDivers.Artina.Grial
 {
-	public class MessageItemViewModel : MessageViewModel
+	public abstract class  MessageItemViewModel : ViewModel
 	{
-		MessageItemDatabase DBMessage = new MessageItemDatabase ();
-
+		//MessageItemDatabase DBMessage = new MessageItemDatabase ();
 		public MessageItemViewModel ()
 		{
 		}
-
-		public MessageItemViewModel (MessageItem m)
+		public MessageItemViewModel (MessageItem m, UserItem U)
 		{
-			ContentText = m.ContentText;
-			ContentTranslate = m.ContentTranslate;
-			IdSender = m.IdSender;
-			IdRecipient = m.IdRecipient;
-			CreateDate = m.CreateDate;
 		}
 
 		//PROP MESSAGE

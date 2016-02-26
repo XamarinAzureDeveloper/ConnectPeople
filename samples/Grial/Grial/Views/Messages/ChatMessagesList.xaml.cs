@@ -4,12 +4,13 @@ using System.Linq;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace UXDivers.Artina.Grial
 {
 	public partial class ChatMessagesList : ContentPage
 	{
-		List<MessageItemViewModel> msg;
+		ObservableCollection<MessageItemViewModel> msg;
 
 		public ChatMessagesList ()
 		{
@@ -36,18 +37,18 @@ namespace UXDivers.Artina.Grial
 			SetupChat (viewModel.Messages);
 		}
 
-		public void SetupChat (List<MessageItemViewModel> messages)
+		public void SetupChat (ObservableCollection<MessageItemViewModel> messages)
 		{
 			View widget;
-			if (msg == messages) {
+			if (msg == messages || msg == null) {
 
 				foreach (var message in messages) {
 					widget = CompareId (message);
 					widget.BindingContext = message;
 					ChatMessagesListView.Children.Add (widget);
 				}
-			} else { 
-				
+			} else if(msg.Count() < messages?.Count()){ 
+				msg = messages;
 				var message = messages.LastOrDefault ();
 				widget = CompareId (message);
 				widget.BindingContext = message;
@@ -87,4 +88,3 @@ namespace UXDivers.Artina.Grial
 		}
 	}
 }
-
